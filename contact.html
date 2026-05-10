@@ -149,6 +149,47 @@
   </div>
 </section>
 
+<!-- CONTACT FORM -->
+<section class="form-section">
+  <div class="form-wrap">
+    <div class="form-intro">
+      <div class="eyebrow">Send us a message</div>
+      <h2>Drop us a line</h2>
+      <p>Have a question, feedback, or a special request? Fill in the form below and we'll get back to you within 24 hours.</p>
+    </div>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="cform">
+      <input type="hidden" name="form-name" value="contact"/>
+      <p class="hidden-field"><label>Don't fill this out: <input name="bot-field"/></label></p>
+
+      <div class="cform-row">
+        <div class="cform-field">
+          <label for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="John Doe" required/>
+        </div>
+        <div class="cform-field">
+          <label for="cf-email">Email Address</label>
+          <input type="email" id="cf-email" name="email" placeholder="john@example.com" required/>
+        </div>
+      </div>
+
+      <div class="cform-field">
+        <label for="cf-phone">Phone (Optional)</label>
+        <input type="tel" id="cf-phone" name="phone" placeholder="+968 XXXX XXXX"/>
+      </div>
+
+      <div class="cform-field">
+        <label for="cf-message">Your Message</label>
+        <textarea id="cf-message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+      </div>
+
+      <div class="cform-submit">
+        <button type="submit" class="btn btn-olive">Send Message →</button>
+      </div>
+    </form>
+  </div>
+</section>
+
 <section class="wa-order">
   <div>
     <h2>Ready to Order?</h2>
@@ -187,7 +228,7 @@
     </div>
     <div class="ft-col">
       <div class="ft-mood-text">Good Food<br/>Good Mood</div>
-      <span class="ft-mood-coffee">☕</span>
+      <span class="ft-mood-coffee"><svg viewBox="0 0 80 70" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 8 Q 20 14, 24 18 T 22 28"/><path d="M34 6 Q 32 12, 36 18 T 34 26"/><path d="M46 8 Q 44 14, 48 18 T 46 28"/><path d="M14 32 L 60 32 L 56 56 Q 56 62, 50 62 L 24 62 Q 18 62, 18 56 Z"/><path d="M60 38 Q 70 38, 70 46 Q 70 54, 60 54"/><ellipse cx="37" cy="32" rx="23" ry="2.5"/></svg></span>
     </div>
   </div>
   <div class="ft-bottom">
