@@ -14,18 +14,12 @@
 
         :root {
             --olive-green: #6B7E3F;
-            --olive-dark: #5A6B33;
             --accent-red: #B22222;
             --cream: #FDF8F2;
             --cream-dark: #F5EDE0;
             --white: #FFFFFF;
             --text-dark: #2C2C2C;
             --text-muted: #6B6B6B;
-        }
-
-        html, body {
-            width: 100%;
-            min-height: 100vh;
         }
 
         body {
@@ -35,21 +29,17 @@
             line-height: 1.6;
         }
 
-        /* Hero Section with BIG Logo */
+        /* Hero Section - tight spacing */
         .hero {
-    background: var(--cream);
-    padding: 100px 20px 80px;
-    text-align: center;
-    position: relative;
-}
+            background: var(--cream);
+            padding: 50px 20px 60px;
+            text-align: center;
+        }
 
         .hero-logo {
-            width: 240px;
-            height: 240px;
-            margin: 0 auto 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 16px;
             animation: floatLogo 3s ease-in-out infinite;
         }
 
@@ -60,12 +50,8 @@
         }
 
         @keyframes floatLogo {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
         }
 
         .hero-content {
@@ -75,14 +61,8 @@
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .badge {
@@ -95,16 +75,16 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 56px;
+            font-size: 52px;
             font-weight: 700;
             color: var(--olive-green);
             line-height: 1.1;
-            margin-bottom: 20px;
+            margin-bottom: 14px;
             letter-spacing: -1px;
         }
 
@@ -118,23 +98,22 @@
             font-size: 22px;
             color: var(--text-muted);
             font-style: italic;
-            margin-bottom: 30px;
+            margin-bottom: 22px;
         }
 
         .hero-description {
             font-size: 16px;
             color: var(--text-muted);
             max-width: 600px;
-            margin: 0 auto 40px;
-            line-height: 1.8;
+            margin: 0 auto 28px;
+            line-height: 1.7;
         }
 
-        /* Decorative divider */
         .divider {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 40px auto;
+            margin: 0 auto;
             max-width: 200px;
         }
 
@@ -163,12 +142,11 @@
         .quote-content {
             max-width: 700px;
             margin: 0 auto;
-            position: relative;
         }
 
         .quote-content blockquote {
             font-family: 'Playfair Display', serif;
-            font-size: 32px;
+            font-size: 30px;
             color: var(--olive-green);
             font-style: italic;
             font-weight: 500;
@@ -177,17 +155,17 @@
 
         .quote-mark {
             font-family: 'Playfair Display', serif;
-            font-size: 80px;
+            font-size: 70px;
             color: var(--accent-red);
             opacity: 0.3;
             line-height: 1;
-            margin-bottom: -20px;
+            margin-bottom: -15px;
         }
 
         /* Features Section */
         .features-section {
             background: var(--cream);
-            padding: 80px 20px;
+            padding: 70px 20px;
         }
 
         .features-content {
@@ -200,19 +178,19 @@
             font-size: 36px;
             color: var(--olive-green);
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             font-weight: 700;
         }
 
         .features-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
+            gap: 22px;
         }
 
         .feature-card {
             background: var(--white);
-            padding: 35px 25px;
+            padding: 28px 22px;
             border-radius: 12px;
             text-align: center;
             transition: all 0.3s ease;
@@ -226,9 +204,9 @@
         }
 
         .feature-icon-wrap {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 20px;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 14px;
             background: var(--cream);
             border-radius: 50%;
             display: flex;
@@ -238,8 +216,8 @@
         }
 
         .feature-icon-wrap svg {
-            width: 32px;
-            height: 32px;
+            width: 26px;
+            height: 26px;
             stroke: var(--accent-red);
             fill: none;
             stroke-width: 2;
@@ -247,22 +225,22 @@
 
         .feature-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 20px;
+            font-size: 19px;
             color: var(--olive-green);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-weight: 600;
         }
 
         .feature-card p {
             font-size: 14px;
             color: var(--text-muted);
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         /* Contact Section */
         .contact-section {
             background: var(--olive-green);
-            padding: 80px 20px;
+            padding: 70px 20px;
             color: var(--white);
         }
 
@@ -274,31 +252,30 @@
 
         .contact-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 42px;
-            margin-bottom: 15px;
+            font-size: 40px;
+            margin-bottom: 10px;
             color: var(--white);
         }
 
         .contact-section .subtitle {
             font-size: 16px;
             color: rgba(255, 255, 255, 0.85);
-            margin-bottom: 50px;
+            margin-bottom: 35px;
         }
 
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            margin-bottom: 50px;
+            gap: 20px;
+            margin-bottom: 35px;
         }
 
         .contact-card {
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 30px 25px;
+            padding: 24px 20px;
             border-radius: 12px;
             transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
         }
 
         .contact-card:hover {
@@ -307,9 +284,9 @@
         }
 
         .contact-card-icon {
-            width: 50px;
-            height: 50px;
-            margin: 0 auto 15px;
+            width: 46px;
+            height: 46px;
+            margin: 0 auto 10px;
             background: var(--accent-red);
             border-radius: 50%;
             display: flex;
@@ -318,8 +295,8 @@
         }
 
         .contact-card-icon svg {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             stroke: var(--white);
             fill: none;
             stroke-width: 2;
@@ -330,7 +307,7 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
             color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             font-weight: 500;
         }
 
@@ -340,28 +317,23 @@
             color: var(--white);
         }
 
-        /* Social Links */
-        .social-section {
-            text-align: center;
-        }
-
         .social-section h3 {
             font-family: 'Playfair Display', serif;
             font-size: 22px;
-            margin-bottom: 25px;
+            margin-bottom: 18px;
             color: var(--white);
         }
 
         .social-links {
             display: flex;
-            gap: 18px;
+            gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .social-links a {
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background: var(--white);
             display: flex;
@@ -372,8 +344,8 @@
         }
 
         .social-links a svg {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             fill: var(--accent-red);
             transition: fill 0.3s ease;
         }
@@ -390,7 +362,7 @@
         /* Footer */
         .footer {
             background: var(--cream-dark);
-            padding: 40px 20px;
+            padding: 30px 20px;
             text-align: center;
         }
 
@@ -402,21 +374,15 @@
         .footer-message {
             color: var(--text-muted);
             font-size: 15px;
-            margin-bottom: 10px;
-        }
-
-        .footer-submessage {
-            color: var(--text-muted);
-            font-size: 13px;
-            margin-bottom: 20px;
+            margin-bottom: 8px;
         }
 
         .copyright {
             font-size: 13px;
             color: var(--text-muted);
-            padding-top: 25px;
+            padding-top: 16px;
             border-top: 1px solid rgba(107, 126, 63, 0.2);
-            margin-top: 25px;
+            margin-top: 16px;
         }
 
         /* Responsive */
@@ -428,17 +394,17 @@
 
         @media (max-width: 768px) {
             .hero {
-    padding: 100px 20px 100px;
-}
+                padding: 40px 20px 50px;
+            }
 
             .hero-logo {
-                width: 180px;
-                height: 180px;
-                margin-bottom: 25px;
+                width: 160px;
+                height: 160px;
+                margin-bottom: 14px;
             }
 
             .hero h1 {
-                font-size: 40px;
+                font-size: 38px;
             }
 
             .hero-subtitle {
@@ -450,15 +416,16 @@
             }
 
             .quote-mark {
-                font-size: 60px;
+                font-size: 55px;
             }
 
             .section-title {
                 font-size: 28px;
+                margin-bottom: 30px;
             }
 
             .contact-section h2 {
-                font-size: 32px;
+                font-size: 30px;
             }
 
             .contact-grid {
@@ -468,19 +435,23 @@
             .features-section,
             .contact-section,
             .quote-section {
-    padding: 100px 20px;
-}
+                padding: 50px 20px;
+            }
         }
 
         @media (max-width: 480px) {
+            .hero {
+                padding: 30px 20px 40px;
+            }
+
             .hero-logo {
-                width: 150px;
-                height: 150px;
-                margin-bottom: 20px;
+                width: 130px;
+                height: 130px;
+                margin-bottom: 12px;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 30px;
             }
 
             .hero-subtitle {
@@ -493,11 +464,11 @@
 
             .features-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 16px;
             }
 
             .feature-card {
-                padding: 30px 20px;
+                padding: 24px 20px;
             }
 
             .quote-content blockquote {
@@ -505,8 +476,8 @@
             }
 
             .social-links a {
-                width: 48px;
-                height: 48px;
+                width: 46px;
+                height: 46px;
             }
 
             .social-links a svg {
@@ -517,7 +488,7 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section with BIG Logo -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-logo">
             <img src="logo.png" alt="Mama Roti">
