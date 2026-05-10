@@ -1,86 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Mamma Roti — Good Food, Made with Love | Indian Cloud Kitchen Muscat</title>
   <meta name="description" content="Mamma Roti — Authentic Indian food delivery in Muscat, Oman. Cloud kitchen serving chaats, biryanis, curries and catering. Order on WhatsApp."/>
   <meta name="keywords" content="Indian food Muscat, cloud kitchen Muscat, Indian delivery Oman, catering Muscat, Mamma Roti, chaat Muscat, biryani Muscat"/>
   <meta name="robots" content="index,follow"/>
   <link rel="canonical" href="https://mammarotioman.com/"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Mamma Roti","url":"https://mammarotioman.com","telephone":"+96893360321","address":{"@type":"PostalAddress","streetAddress":"Ghubrah","addressLocality":"Muscat","addressCountry":"OM"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:30","closes":"14:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"17:00","closes":"23:00"}],"servesCuisine":["Indian","Street Food","Chinese"],"hasMenu":"https://mammarotioman.com/menu.html"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Mamma Roti","url":"https://mammarotioman.com","telephone":"+96893360321","address":{"@type":"PostalAddress","streetAddress":"Ghubrah","addressLocality":"Muscat","addressCountry":"OM"},"servesCuisine":["Indian","Street Food","Chinese"],"hasMenu":"https://mammarotioman.com/menu.html"}</script>
   <link rel="stylesheet" href="style.css"/>
   <style>
-.hero{min-height:calc(100vh - 70px);background:var(--cream);display:flex;align-items:center;position:relative;overflow:hidden;padding:3rem 2rem}
-.hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,transparent,transparent 40px,rgba(74,94,42,.022) 40px,rgba(74,94,42,.022) 41px)}
-.hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;position:relative;z-index:2;width:100%}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(139,26,26,.07);border:1px solid rgba(139,26,26,.15);color:var(--red);font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.32rem .85rem;border-radius:30px;margin-bottom:1.4rem}
-.hero-left h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,5.5vw,4.5rem);font-weight:900;color:var(--olive-dk);line-height:1.05;margin-bottom:1rem}
-.hero-left h1 em{font-style:italic;color:var(--red);position:relative}
-.hero-left h1 em::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:3px;background:var(--red);border-radius:2px}
+/* HERO */
+.hero{min-height:calc(100vh - 70px);background:#fff;display:flex;align-items:center;overflow:hidden;padding:3rem 2rem;position:relative}
+.hero::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a5e2a' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;position:relative;z-index:2;width:100%}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(139,26,26,.07);border:1px solid rgba(139,26,26,.15);color:var(--red);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.32rem .85rem;border-radius:30px;margin-bottom:1.4rem}
+.hero-left h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:900;color:var(--olive-dk);line-height:1.03;margin-bottom:1rem}
+.hero-left h1 em{font-style:italic;color:var(--red);position:relative;display:inline-block}
+.hero-left h1 em::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:3px;background:var(--red);border-radius:2px}
 .hero-desc{font-size:.97rem;color:var(--text-muted);line-height:1.75;max-width:400px;margin-bottom:2rem}
 .hero-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
-.btn-story{display:inline-flex;align-items:center;gap:8px;color:var(--text);font-size:.88rem;font-weight:600;text-decoration:none;transition:color .2s}
+/* Our Story button — exact match to reference */
+.btn-story{display:inline-flex;align-items:center;gap:10px;color:var(--text);font-size:.9rem;font-weight:600;text-decoration:none;transition:color .2s}
 .btn-story:hover{color:var(--olive)}
-.story-play{width:36px;height:36px;border-radius:50%;background:var(--olive-dk);display:flex;align-items:center;justify-content:center}
-.story-play svg{width:13px;height:13px;margin-left:2px}
+.play-circle{width:38px;height:38px;border-radius:50%;background:var(--olive-dk);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s}
+.btn-story:hover .play-circle{background:var(--olive)}
+.play-circle svg{width:13px;height:13px;margin-left:3px}
+/* Hero right */
 .hero-right{display:flex;align-items:center;justify-content:center;position:relative}
-.hero-logo-wrap{position:relative;width:100%;max-width:460px}
-.hero-logo-img{width:100%;height:auto;display:block;filter:drop-shadow(0 20px 60px rgba(74,94,42,.18))}
-.fresh-badge{position:absolute;top:8%;right:0;width:86px;height:86px;background:#fff;border-radius:50%;border:2px solid var(--cream-3);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.08);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);line-height:1.5}
-.wave-down{background:white;overflow:hidden;line-height:0}
+.hero-logo-wrap{position:relative;width:100%;max-width:480px}
+.hero-logo-img{width:100%;height:auto;display:block;mix-blend-mode:multiply}
+.fresh-badge{position:absolute;top:6%;right:2%;width:84px;height:84px;border-radius:50%;border:2px solid var(--olive);background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:.6rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--olive-dk);line-height:1.55;box-shadow:0 4px 16px rgba(74,94,42,.15)}
+/* Wave */
+.wave-down{background:#fff;overflow:hidden;line-height:0}
 .wave-down svg{display:block;width:100%}
+
 /* MENU HOME */
 .menu-home{background:#fff;padding:5rem 2rem}
-.menu-arrows{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-bottom:.4rem}
+.menu-arrows{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-bottom:.35rem}
 .menu-arrows-txt{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--text)}
 .deco{color:var(--red);font-size:1.2rem}
-.deco.flip{transform:scaleX(-1);display:inline-block}
-.rule{width:60px;height:2px;background:var(--red);margin:.4rem auto .7rem}
+.rule{width:60px;height:2px;background:var(--red);margin:.35rem auto .6rem}
 .ftabs{display:flex;justify-content:center;gap:.4rem;flex-wrap:wrap;margin-bottom:2.5rem}
-.ftab{padding:.4rem 1.05rem;border-radius:30px;font-size:.8rem;font-weight:600;cursor:pointer;border:none;background:var(--cream-2);color:var(--text-muted);transition:all .2s;font-family:'DM Sans',sans-serif}
-.ftab:hover{background:var(--cream-3);color:var(--text)}
-.ftab.active{background:var(--olive);color:#fff}
+.ftab{padding:.4rem 1.1rem;border-radius:30px;font-size:.8rem;font-weight:600;cursor:pointer;border:1.5px solid rgba(74,94,42,.2);background:#fff;color:var(--text-muted);transition:all .2s;font-family:'DM Sans',sans-serif}
+.ftab:hover{border-color:var(--olive);color:var(--olive)}
+.ftab.active{background:var(--olive);color:#fff;border-color:var(--olive)}
 .mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
 .mhcta{text-align:center;margin-top:2.5rem}
+
 /* BBQ BANNER */
 .bbq{background:var(--red);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
 .bbq-l{padding:4rem 3rem;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center}
-.bbq-ghost{position:absolute;left:-40px;top:50%;transform:translateY(-50%);opacity:.05;width:300px;pointer-events:none}
+.bbq-ghost{position:absolute;left:-30px;top:50%;transform:translateY(-50%);opacity:.06;width:280px;pointer-events:none;mix-blend-mode:luminosity;filter:brightness(0) invert(1)}
 .bbq-l h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:900;color:#fff;line-height:1.15;margin-bottom:.7rem}
-.bbq-l p{font-size:.9rem;color:rgba(255,255,255,.68);margin-bottom:2rem;line-height:1.65;max-width:340px}
+.bbq-l p{font-size:.9rem;color:rgba(255,255,255,.7);margin-bottom:2rem;line-height:1.65;max-width:320px}
 .bbq-r{position:relative;min-height:380px;overflow:hidden}
-.bbq-r .food-ph{height:100%;min-height:380px;background:rgba(0,0,0,.2)}
-.bbq-fbadge{position:absolute;top:50%;left:-38px;transform:translateY(-50%);width:76px;height:76px;background:var(--cream);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:.56rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--red);line-height:1.4;box-shadow:0 4px 16px rgba(0,0,0,.15);z-index:3}
+.bbq-food{width:100%;height:100%;min-height:380px;background:linear-gradient(135deg,rgba(0,0,0,.25),rgba(0,0,0,.4));display:flex;align-items:center;justify-content:center}
+.bbq-food-img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:block}
+.bbq-fbadge{position:absolute;top:50%;left:-36px;transform:translateY(-50%);width:72px;height:72px;background:#fff;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:.54rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--red);line-height:1.4;box-shadow:0 4px 16px rgba(0,0,0,.2);z-index:3}
+
 /* WHY */
-.why{background:var(--cream);padding:5rem 2rem}
+.why{background:var(--off-white);padding:5rem 2rem}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .why-photos{position:relative;height:420px}
-.wphoto{position:absolute;border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.12)}
+.wphoto{position:absolute;border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.14)}
+.wphoto img{width:100%;height:100%;object-fit:cover;display:block}
 .wp1{width:62%;height:280px;top:0;left:0}
 .wp2{width:50%;height:220px;bottom:0;right:0}
 .wfeats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
-.wfi{display:flex;align-items:flex-start;gap:.7rem}
-.wfi-icon{font-size:1.5rem;flex-shrink:0;margin-top:.1rem}
-.wfi h4{font-family:'Playfair Display',serif;font-size:.93rem;font-weight:700;color:var(--text);margin-bottom:.2rem}
-.wfi p{font-size:.78rem;color:var(--text-muted);line-height:1.55}
-/* CTA STRIP */
+.wfi{display:flex;align-items:flex-start;gap:.75rem}
+.wfi-icon{width:36px;height:36px;flex-shrink:0;margin-top:.1rem}
+.wfi h4{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.2rem}
+.wfi p{font-size:.8rem;color:var(--text-muted);line-height:1.55}
+
+/* CTA */
 .cta-s{background:var(--olive-dk);padding:5rem 2rem;text-align:center}
 .cta-s h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;color:#fff;margin-bottom:.7rem}
-.cta-s h2 em{font-style:italic;color:var(--gold)}
+.cta-s h2 em{font-style:italic;color:#c8963c}
 .cta-s p{font-size:.93rem;color:rgba(255,255,255,.5);margin-bottom:2rem}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-/* CATERING DL */
+
+/* CATERING */
 .cat-dl{background:#fff;padding:4rem 2rem}
-.cat-dl-box{max-width:1160px;margin:0 auto;background:var(--cream);border-radius:20px;padding:2.5rem 3rem;display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap;border:1px solid var(--cream-3)}
-.cat-icon{font-size:3.5rem;flex-shrink:0}
+.cat-dl-box{max-width:1160px;margin:0 auto;background:var(--olive-dk);border-radius:20px;padding:2.5rem 3rem;display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap}
+.cat-icon{font-size:0;width:56px;height:56px;flex-shrink:0}
+.cat-icon svg{width:56px;height:56px}
 .cat-txt{flex:1;min-width:220px}
-.cat-txt h3{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--text);margin-bottom:.4rem}
-.cat-txt p{font-size:.88rem;color:var(--text-muted);line-height:1.7}
+.cat-txt h3{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:#fff;margin-bottom:.4rem}
+.cat-txt p{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7}
 .cat-acts{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;flex-shrink:0}
-/* food placeholder */
-.food-ph{width:100%;height:100%;background:linear-gradient(135deg,var(--cream-2),var(--cream-3));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;color:var(--text-muted);font-size:.73rem}
-.food-ph em{font-size:2rem;opacity:.35;font-style:normal}
+
 @media(max-width:1024px){.mgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.hero-inner{grid-template-columns:1fr;gap:2rem}.hero-right{order:-1}.hero-logo-wrap{max-width:280px;margin:0 auto}.bbq{grid-template-columns:1fr}.bbq-r{min-height:220px}.bbq-fbadge{display:none}.why-grid{grid-template-columns:1fr}.why-photos{height:260px}.cat-dl-box{flex-direction:column;gap:1.5rem;padding:2rem;text-align:center}.cat-acts{justify-content:center}}
 @media(max-width:580px){.mgrid{grid-template-columns:1fr 1fr}.wfeats{grid-template-columns:1fr}}
@@ -107,7 +116,7 @@
   <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" target="_blank" rel="noopener">Order Now →</a>
 </div>
 
-<div class="del-strip page-top">🎉 40% OFF on orders above 5 OMR <span>|</span> 🚗 FREE delivery on orders above 10 OMR <span>|</span> All over Muscat</div>
+<div class="del-strip page-top">🎉 40% OFF on orders above 5 OMR <span class="sep">|</span> 🚗 FREE delivery on orders above 10 OMR <span class="sep">|</span> ~1 hour · from 1.200 OMR</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -115,11 +124,13 @@
     <div class="hero-left a1">
       <div class="hero-badge">📍 Ghubrah, Muscat · Delivery Available</div>
       <h1>Good Food.<br/>Made with <em>Love.</em></h1>
-      <p class="hero-desc">At Mamma Roti, every meal is prepared fresh with the finest ingredients. From our kitchen to your heart — authentic Indian flavours crafted with care.</p>
+      <p class="hero-desc">At Mamma Roti, every meal is made fresh with love and the finest ingredients. From our kitchen to your heart.</p>
       <div class="hero-actions">
         <a href="menu.html" class="btn btn-olive">View Menu</a>
         <a href="about.html" class="btn-story">
-          <div class="story-play"><svg viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6L1 13V1z"/></svg></div>
+          <div class="play-circle">
+            <svg viewBox="0 0 12 14" fill="white"><path d="M1 1l10 6L1 13V1z"/></svg>
+          </div>
           Our Story
         </a>
       </div>
@@ -127,13 +138,15 @@
     <div class="hero-right a2">
       <div class="hero-logo-wrap">
         <img src="log.jpg" alt="Mamma Roti — Made with Love" class="hero-logo-img"/>
-        <div class="fresh-badge">FRESH<br/>TASTY<br/>EVERYDAY</div>
+        <div class="fresh-badge">FRESH<br/>TASTY<br/>EVERY<br/>DAY</div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="wave-down"><svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:56px"><path d="M0,28 C240,56 480,0 720,28 C960,56 1200,0 1440,28 L1440,56 L0,56 Z" fill="#ffffff"/></svg></div>
+<div class="wave-down" style="background:var(--off-white)">
+  <svg viewBox="0 0 1440 52" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:52px"><path d="M0,26 C240,52 480,0 720,26 C960,52 1200,0 1440,26 L1440,52 L0,52 Z" fill="#ffffff"/></svg>
+</div>
 
 <!-- MENU PREVIEW -->
 <section class="menu-home">
@@ -142,7 +155,7 @@
       <div class="menu-arrows">
         <span class="deco">➤</span>
         <span class="menu-arrows-txt">OUR MENU</span>
-        <span class="deco flip">➤</span>
+        <span class="deco" style="transform:scaleX(-1);display:inline-block">➤</span>
       </div>
       <div class="rule"></div>
       <p style="font-size:.88rem;color:var(--text-muted)">Fresh · Authentic · Made Daily</p>
@@ -157,20 +170,42 @@
       <button class="ftab" data-cat="sweets">Sweets</button>
     </div>
     <div class="mgrid" id="mgrid">
-      <div class="mcard" data-cat="chaat"><div class="mcard-img food-ph"><em>🌮</em>Pani Puri</div><div class="mcard-body"><div class="mcard-cat">Chaat Corner</div><div class="mcard-name">Pani Puri</div><div class="mcard-desc">Crispy puris filled with tangy tamarind water and spiced potato</div><div class="mcard-price">0.500 baiza</div></div></div>
-      <div class="mcard" data-cat="chaat"><div class="mcard-img food-ph"><em>🍛</em>Papdi Chaat</div><div class="mcard-body"><div class="mcard-cat">Chaat Corner</div><div class="mcard-name">Papdi Chaat</div><div class="mcard-desc">Crunchy papdi with yoghurt, chutneys and fresh sev on top</div><div class="mcard-price">0.800 baiza</div></div></div>
-      <div class="mcard" data-cat="indian"><div class="mcard-img food-ph"><em>🍗</em>Butter Chicken</div><div class="mcard-body"><div class="mcard-cat">Indian Main</div><div class="mcard-name">Butter Chicken</div><div class="mcard-desc">Rich, creamy tomato-based gravy with tender chicken pieces</div><div class="mcard-price">1.500 / 2.600 OMR</div></div></div>
-      <div class="mcard" data-cat="indian"><div class="mcard-img food-ph"><em>🥬</em>Palak Paneer</div><div class="mcard-body"><div class="mcard-cat">Indian Main</div><div class="mcard-name">Palak Paneer</div><div class="mcard-desc">Fresh cottage cheese in a silky spiced spinach gravy</div><div class="mcard-price">1.400 / 2.400 OMR</div></div></div>
-      <div class="mcard" data-cat="chinese"><div class="mcard-img food-ph"><em>🍜</em>Hakka Noodles</div><div class="mcard-body"><div class="mcard-cat">Chinese</div><div class="mcard-name">Chicken Hakka Noodles</div><div class="mcard-desc">Wok-tossed noodles with chicken, veggies and Indo-Chinese sauce</div><div class="mcard-price">2.000 / 2.400 OMR</div></div></div>
-      <div class="mcard" data-cat="starters"><div class="mcard-img food-ph"><em>🍖</em>Chicken 65</div><div class="mcard-body"><div class="mcard-cat">Starters</div><div class="mcard-name">Chicken 65</div><div class="mcard-desc">Crispy deep-fried chicken with curry leaves and green chillies</div><div class="mcard-price">1.500 / 2.400 OMR</div></div></div>
-      <div class="mcard" data-cat="breads"><div class="mcard-img food-ph"><em>🫓</em>Lacha Paratha</div><div class="mcard-body"><div class="mcard-cat">Breads & Rotis</div><div class="mcard-name">Lacha Paratha</div><div class="mcard-desc">Flaky, layered whole wheat paratha made fresh to order</div><div class="mcard-price">0.300 baiza</div></div></div>
-      <div class="mcard" data-cat="sweets"><div class="mcard-img food-ph"><em>🍮</em>Gulab Jamun</div><div class="mcard-body"><div class="mcard-cat">Sweets</div><div class="mcard-name">Gulab Jamun</div><div class="mcard-desc">Soft milk-solid dumplings soaked in rose-flavoured sugar syrup</div><div class="mcard-price">0.300 baiza</div></div></div>
+      <div class="mcard" data-cat="chaat">
+        <div class="mcard-img food-ph food-ph-chaat"><span>Pani Puri</span></div>
+        <div class="mcard-body"><div class="mcard-cat">Chaat Corner</div><div class="mcard-name">Pani Puri</div><div class="mcard-desc">Crispy puris with tangy tamarind water and spiced potato</div><div class="mcard-price">0.500 baiza</div></div>
+      </div>
+      <div class="mcard" data-cat="chaat">
+        <div class="mcard-img food-ph food-ph-chaat"><span>Papdi Chaat</span></div>
+        <div class="mcard-body"><div class="mcard-cat">Chaat Corner</div><div class="mcard-name">Papdi Chaat</div><div class="mcard-desc">Crunchy papdi with yoghurt, chutneys and fresh sev</div><div class="mcard-price">0.800 baiza</div></div>
+      </div>
+      <div class="mcard" data-cat="indian">
+        <div class="mcard-img food-ph food-ph-indian"><span>Butter Chicken</span></div>
+        <div class="mcard-body"><div class="mcard-cat">Indian Main</div><div class="mcard-name">Butter Chicken</div><div class="mcard-desc">Rich creamy tomato gravy with tender chicken pieces</div><div class="mcard-price">1.500 / 2.600 OMR</div></div>
+      </div>
+      <div class="mcard" data-cat="indian">
+        <div class="mcard-img food-ph food-ph-indian"><span>Palak Paneer</span></div>
+        <div class="mcard-body"><div class="mcard-cat">Indian Main</div><div class="mcard-name">Palak Paneer</div><div class="mcard-desc">Fresh cottage cheese in a silky spiced spinach gravy</div><div class="mcard-price">1.400 / 2.400 OMR</div></div>
+      </div>
+      <div class="mcard" data-cat="chinese">
+        <div class="mcard-img food-ph food-ph-chinese"><span>Hakka Noodles</span></div>
+        <div class="mcard-body"><div class="mcard-cat">Chinese</div><div class="mcard-name">Chicken Hakka Noodles</div><div class="mcard-desc">Wok-tossed noodles with chicken and Indo-Chinese sauce</div><div class="mcard-price">2.000 / 2.400 OMR</div></div>
+      </div>
+      <div class="mcard" data-cat="starters">
+        <div class="mcard-img food-ph food-ph-starter"><span>Chicken 65</span></div>
+        <div class="mcard-body"><div class="mcard-cat">Starters</div><div class="mcard-name">Chicken 65</div><div class="mcard-desc">Crispy fried chicken with curry leaves and green chillies</div><div class="mcard-price">1.500 / 2.400 OMR</div></div>
+      </div>
+      <div class="mcard" data-cat="breads">
+        <div class="mcard-img food-ph food-ph-bread"><span>Lacha Paratha</span></div>
+        <div class="mcard-body"><div class="mcard-cat">Breads & Rotis</div><div class="mcard-name">Lacha Paratha</div><div class="mcard-desc">Flaky layered whole wheat paratha made fresh to order</div><div class="mcard-price">0.300 baiza</div></div>
+      </div>
+      <div class="mcard" data-cat="sweets">
+        <div class="mcard-img food-ph food-ph-sweet"><span>Gulab Jamun</span></div>
+        <div class="mcard-body"><div class="mcard-cat">Sweets</div><div class="mcard-name">Gulab Jamun</div><div class="mcard-desc">Soft milk dumplings soaked in rose-flavoured sugar syrup</div><div class="mcard-price">0.300 baiza</div></div>
+      </div>
     </div>
     <div class="mhcta"><a href="menu.html" class="btn btn-olive">View Full Menu →</a></div>
   </div>
 </section>
-
-<div style="background:#fff;overflow:hidden;line-height:0"><svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;display:block;width:100%"><path d="M0,24 C360,48 720,0 1080,24 C1260,36 1350,12 1440,24 L1440,0 L0,0 Z" fill="var(--cream)"/></svg></div>
 
 <!-- BBQ BANNER -->
 <div class="bbq">
@@ -181,7 +216,10 @@
     <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="btn btn-white" target="_blank" rel="noopener">Order Now →</a>
   </div>
   <div class="bbq-r">
-    <div class="food-ph" style="min-height:380px"><em style="font-size:3rem;opacity:.25">🔥</em><span>Food photo coming soon</span></div>
+    <div class="bbq-food food-ph-starter" style="flex-direction:column;gap:.5rem">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8v8"/></svg>
+      <span style="color:rgba(255,255,255,.25);font-size:.75rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Food photo coming soon</span>
+    </div>
     <div class="bbq-fbadge">100%<br/>FRESH</div>
   </div>
 </div>
@@ -191,64 +229,91 @@
   <div class="container">
     <div class="why-grid">
       <div class="why-photos">
-        <div class="wphoto wp1"><div class="food-ph" style="height:100%"><em style="font-size:2.5rem;opacity:.3">🍛</em></div></div>
-        <div class="wphoto wp2"><div class="food-ph" style="height:100%"><em style="font-size:2.5rem;opacity:.3">🥘</em></div></div>
+        <div class="wphoto wp1">
+          <div class="food-ph food-ph-indian" style="height:100%"><span>Indian Mains</span></div>
+        </div>
+        <div class="wphoto wp2">
+          <div class="food-ph food-ph-chaat" style="height:100%"><span>Chaat Corner</span></div>
+        </div>
       </div>
       <div>
         <div class="eyebrow">Why Us</div>
         <h2 class="sec-title">Why Choose<br/><em>Mamma Roti?</em></h2>
         <div class="wfeats">
-          <div class="wfi"><span class="wfi-icon">❤️</span><div><h4>Made with Love</h4><p>Every meal prepared with genuine care and passion</p></div></div>
-          <div class="wfi"><span class="wfi-icon">🔥</span><div><h4>Authentic Recipes</h4><p>Traditional Indian flavours, made the real way</p></div></div>
-          <div class="wfi"><span class="wfi-icon">🌿</span><div><h4>Fresh Ingredients</h4><p>Only the finest ingredients, sourced and cooked daily</p></div></div>
-          <div class="wfi"><span class="wfi-icon">😊</span><div><h4>Great Vibes</h4><p>Good food, good mood — always a great experience</p></div></div>
+          <div class="wfi">
+            <svg class="wfi-icon" viewBox="0 0 36 36" fill="none"><path d="M18 31s-13-8.5-13-17a8 8 0 0116 0 8 8 0 0116 0c0 8.5-13 17-13 17z" stroke="var(--red)" stroke-width="2" fill="rgba(139,26,26,.08)"/></svg>
+            <div><h4>Made with Love</h4><p>Every meal prepared with genuine care and passion</p></div>
+          </div>
+          <div class="wfi">
+            <svg class="wfi-icon" viewBox="0 0 36 36" fill="none"><path d="M18 4c0 0-2 4-2 8 0 3 2 5 2 5s2-2 2-5c0-4-2-8-2-8z" stroke="var(--red)" stroke-width="2" fill="rgba(139,26,26,.08)"/><path d="M10 14c0 0-3 4-3 9a11 11 0 0022 0c0-5-3-9-3-9" stroke="var(--red)" stroke-width="2"/></svg>
+            <div><h4>Grilled to Perfection</h4><p>Expertly crafted for authentic Indian taste</p></div>
+          </div>
+          <div class="wfi">
+            <svg class="wfi-icon" viewBox="0 0 36 36" fill="none"><ellipse cx="18" cy="18" rx="12" ry="7" stroke="var(--olive)" stroke-width="2" fill="rgba(74,94,42,.08)"/><path d="M18 11V7M14 13l-3-3M22 13l3-3" stroke="var(--olive)" stroke-width="2" stroke-linecap="round"/></svg>
+            <div><h4>Fresh Ingredients</h4><p>Only the finest ingredients, sourced fresh daily</p></div>
+          </div>
+          <div class="wfi">
+            <svg class="wfi-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13" stroke="var(--olive)" stroke-width="2" fill="rgba(74,94,42,.08)"/><path d="M13 21s1.5 3 5 3 5-3 5-3" stroke="var(--olive)" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="16" r="1.5" fill="var(--olive)"/><circle cx="22" cy="16" r="1.5" fill="var(--olive)"/></svg>
+            <div><h4>Great Vibes</h4><p>Good food, good mood — always a great experience</p></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CATERING DOWNLOAD -->
+<!-- CATERING DL -->
 <section class="cat-dl">
   <div class="container">
     <div class="cat-dl-box">
-      <div class="cat-icon">🎪</div>
+      <div class="cat-icon">
+        <svg viewBox="0 0 56 56" fill="none"><rect width="56" height="56" rx="12" fill="rgba(255,255,255,.1)"/><path d="M14 38h28M20 28h16M24 20h8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="M28 44V28" stroke="#c8963c" stroke-width="2.5" stroke-linecap="round"/><path d="M22 34l6 6 6-6" stroke="#c8963c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
       <div class="cat-txt">
         <h3>Planning an Event or Party?</h3>
-        <p>We offer customised catering for home gatherings, birthdays and celebrations. Live stations, curated menus, signature starters and dedicated service staff. Standard party menu from 4.5 OMR per person.</p>
+        <p>Customised catering for home gatherings, birthdays and celebrations. Live stations, curated menus, service staff. Standard party menu from 4.5 OMR per person.</p>
       </div>
       <div class="cat-acts">
-        <a href="mmom.pdf" class="btn btn-olive" download>⬇ Download Catering Menu</a>
-        <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27m%20interested%20in%20catering%20for%20an%20event." class="btn btn-outline" target="_blank" rel="noopener">Chat with Us</a>
+        <a href="mmom.pdf" class="btn btn-white" download>⬇ Download Catering Menu</a>
+        <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27m%20interested%20in%20catering." class="btn btn-outline-white" target="_blank" rel="noopener">Chat with Us</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA STRIP -->
+<!-- CTA -->
 <section class="cta-s">
   <div class="container">
     <h2>Ready to Taste <em>Perfection?</em></h2>
     <p>Order now and experience authentic Indian flavours crafted with love — delivered across Muscat.</p>
     <div class="cta-btns">
       <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="btn btn-white" target="_blank" rel="noopener">Order on WhatsApp</a>
-      <a href="contact.html" class="btn btn-outline" style="color:rgba(255,255,255,.65);border-color:rgba(255,255,255,.35)">Get in Touch</a>
+      <a href="contact.html" class="btn btn-outline-white">Get in Touch</a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="ft-grid">
-    <div class="ft-brand"><img src="log.jpg" alt="Mamma Roti"/><p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p><div class="ft-social"><a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a><a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a><a href="tel:+96893360321">☎</a></div></div>
+    <div class="ft-brand">
+      <img src="log.jpg" alt="Mamma Roti"/>
+      <p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p>
+      <div class="ft-social">
+        <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a>
+        <a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a>
+        <a href="tel:+96893360321">☎</a>
+      </div>
+    </div>
     <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
-    <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321" style="color:rgba(255,255,255,.5);text-decoration:none">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5);text-decoration:none">@mammaroti.om</a></p></div>
+    <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">@mammaroti.om</a></p></div>
   </div>
   <div class="ft-bottom"><p>© 2026 Mamma Roti. All rights reserved. Good food made with love.</p><p>Built by <a href="https://foodfeedstudio.in">Food Feed Studio</a></p></div>
 </footer>
 
-<a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti!" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti!" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
 <script>
 window.addEventListener('scroll',()=>document.getElementById('nb').classList.toggle('scrolled',scrollY>20));
@@ -260,5 +325,4 @@ document.querySelectorAll('.ftab').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#mgrid .mcard').forEach(c=>c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none');
 }));
 </script>
-</body>
-</html>
+</body></html>

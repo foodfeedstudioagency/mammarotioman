@@ -8,26 +8,52 @@
   <link rel="canonical" href="https://mammarotioman.com/gallery.html"/>
   <link rel="stylesheet" href="style.css"/>
   <style>
-.gfilter{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
-.gftab{padding:.42rem 1.1rem;border-radius:30px;font-size:.8rem;font-weight:600;cursor:pointer;border:none;background:var(--cream-2);color:var(--text-muted);transition:all .2s;font-family:'DM Sans',sans-serif}
-.gftab:hover{background:var(--cream-3);color:var(--text)}
-.gftab.active{background:var(--olive);color:#fff}
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.gcell{border-radius:12px;overflow:hidden;cursor:pointer;position:relative;box-shadow:0 2px 12px rgba(0,0,0,.07);transition:transform .3s,box-shadow .3s}
-.gcell:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(0,0,0,.14)}
+.g-intro{background:#fff;padding:3rem 2rem 0;text-align:center}
+.g-intro p{font-size:.95rem;color:var(--text-muted);max-width:500px;margin:.5rem auto 0;line-height:1.7}
+.gfilter{display:flex;justify-content:center;gap:.4rem;flex-wrap:wrap;padding:2rem 2rem 0;background:#fff}
+.gftab{padding:.4rem 1.05rem;border-radius:30px;font-size:.8rem;font-weight:600;cursor:pointer;border:1.5px solid rgba(74,94,42,.2);background:#fff;color:var(--text-muted);transition:all .2s;font-family:'DM Sans',sans-serif}
+.gftab:hover{border-color:var(--olive);color:var(--olive)}
+.gftab.active{background:var(--olive);color:#fff;border-color:var(--olive)}
+
+/* Masonry-style gallery */
+.gallery-wrap{background:#fff;padding:2rem 2rem 5rem}
+.gallery-grid{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.gcell{border-radius:8px;overflow:hidden;cursor:pointer;position:relative;box-shadow:0 2px 12px rgba(0,0,0,.08);transition:transform .3s,box-shadow .3s}
+.gcell:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.16)}
 .gcell.tall{grid-row:span 2}
-.gcell.wide{grid-column:span 2}
-.gimg{width:100%;height:100%;min-height:240px;background:linear-gradient(135deg,var(--cream-2),var(--cream-3));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;color:var(--text-muted);font-size:.75rem;transition:transform .3s}
-.gcell:hover .gimg{transform:scale(1.04)}
-.gimg em{font-style:normal;font-size:2.2rem;opacity:.35}
-.gcell.tall .gimg{min-height:500px}
-.gcell.wide .gimg{min-height:240px}
-.glabel{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.55));padding:1.5rem 1rem .8rem;color:#fff;font-size:.78rem;font-weight:500;transform:translateY(100%);transition:transform .3s}
-.gcell:hover .glabel{transform:translateY(0)}
-.ig-strip{background:var(--olive-dk);padding:3rem 2rem;text-align:center}
-.ig-strip h3{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#fff;margin-bottom:.5rem}
-.ig-strip p{font-size:.88rem;color:rgba(255,255,255,.5);margin-bottom:1.5rem}
-@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr)}.gcell.tall{grid-row:span 1}.gcell.wide{grid-column:span 1}}
+.gcell-inner{width:100%;height:100%;min-height:220px;position:relative;overflow:hidden;display:flex;align-items:flex-end}
+.gcell.tall .gcell-inner{min-height:460px}
+/* Each cell gets a rich gradient bg, no emojis */
+.gc-chaat{background:linear-gradient(145deg,#6b3a1a 0%,#8b5e2a 40%,#5a2e10 100%)}
+.gc-indian{background:linear-gradient(145deg,#5a1a10 0%,#8b2a1a 40%,#4a1008 100%)}
+.gc-chinese{background:linear-gradient(145deg,#1a3a1a 0%,#2d5e2a 40%,#0a2808 100%)}
+.gc-starter{background:linear-gradient(145deg,#4a1a10 0%,#8b1a1a 40%,#3a0808 100%)}
+.gc-sweet{background:linear-gradient(145deg,#3a1a4a 0%,#6b2a8b 40%,#2a0838 100%)}
+.gc-catering{background:linear-gradient(145deg,#1a2a4a 0%,#2a3a7a 40%,#0a1438 100%)}
+.gc-bread{background:linear-gradient(145deg,#4a3a10 0%,#8b6a1a 40%,#3a2808 100%)}
+
+/* Dish name watermark style */
+.gcell-name{position:absolute;bottom:0;left:0;right:0;padding:1.5rem 1.25rem .85rem;background:linear-gradient(transparent,rgba(0,0,0,.6));color:#fff;font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;letter-spacing:.02em;transform:translateY(100%);transition:transform .3s}
+.gcell:hover .gcell-name{transform:translateY(0)}
+.gcell-cat{font-family:'DM Sans',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.25rem}
+
+/* Texture overlay on each cell */
+.gcell-inner::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='none'/%3E%3Ccircle cx='2' cy='2' r='.5' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E");pointer-events:none}
+
+/* Photo coming soon tag */
+.ph-tag{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.12);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .65rem;border-radius:30px}
+
+/* IG STRIP */
+.ig-strip{background:var(--olive-dk);padding:3.5rem 2rem;text-align:center}
+.ig-strip h3{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#fff;margin-bottom:.5rem}
+.ig-strip p{font-size:.9rem;color:rgba(255,255,255,.5);margin-bottom:1.75rem}
+
+/* HOW TO ADD PHOTOS note */
+.photo-note{background:var(--off-white);border-left:3px solid var(--olive);padding:1.25rem 1.5rem;margin:0 2rem;max-width:1160px;margin-left:auto;margin-right:auto;border-radius:0 4px 4px 0;margin-bottom:2rem}
+.photo-note p{font-size:.82rem;color:var(--text-muted);line-height:1.6}
+.photo-note strong{color:var(--text)}
+
+@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr)}.gcell.tall{grid-row:span 1}.gcell.tall .gcell-inner{min-height:220px}}
 @media(max-width:480px){.gallery-grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -57,37 +83,43 @@
   </div>
 </div>
 
-<section class="section" style="background:#fff">
-  <div class="container">
-    <div class="gfilter">
-      <button class="gftab active" data-gcat="all">All</button>
-      <button class="gftab" data-gcat="chaat">Chaat & Snacks</button>
-      <button class="gftab" data-gcat="mains">Indian Mains</button>
-      <button class="gftab" data-gcat="catering">Catering</button>
-      <button class="gftab" data-gcat="sweets">Sweets</button>
-    </div>
+<div class="g-intro">
+  <div class="eyebrow" style="justify-content:center">Food & Moments</div>
+  <h2 class="sec-title">Made Fresh, <em>Every Day</em></h2>
+  <p>Real food, real love. Photos added as we cook. Follow us on Instagram for the latest daily specials.</p>
+</div>
 
-    <div class="gallery-grid" id="ggrid">
-      <div class="gcell tall" data-gcat="chaat"><div class="gimg"><em>🌮</em>Pani Puri</div><div class="glabel">Pani Puri — Chaat Corner</div></div>
-      <div class="gcell" data-gcat="mains"><div class="gimg"><em>🍗</em>Butter Chicken</div><div class="glabel">Butter Chicken</div></div>
-      <div class="gcell" data-gcat="mains"><div class="gimg"><em>🥬</em>Palak Paneer</div><div class="glabel">Palak Paneer</div></div>
-      <div class="gcell wide" data-gcat="catering"><div class="gimg" style="min-height:240px"><em>🍽️</em>Catering Setup</div><div class="glabel">Full Catering Setup — Birthday Party</div></div>
-      <div class="gcell" data-gcat="chaat"><div class="gimg"><em>🍛</em>Papdi Chaat</div><div class="glabel">Papdi Chaat</div></div>
-      <div class="gcell" data-gcat="sweets"><div class="gimg"><em>🍮</em>Gulab Jamun</div><div class="glabel">Gulab Jamun</div></div>
-      <div class="gcell" data-gcat="mains"><div class="gimg"><em>🍖</em>Chicken 65</div><div class="glabel">Chicken 65 — Starter</div></div>
-      <div class="gcell tall" data-gcat="catering"><div class="gimg"><em>🎪</em>Live Station</div><div class="glabel">Live Chaat Station</div></div>
-      <div class="gcell" data-gcat="chaat"><div class="gimg"><em>🥟</em>Samosa</div><div class="glabel">Fresh Samosa</div></div>
-      <div class="gcell" data-gcat="mains"><div class="gimg"><em>🍜</em>Hakka Noodles</div><div class="glabel">Chicken Hakka Noodles</div></div>
-      <div class="gcell" data-gcat="sweets"><div class="gimg"><em>🧁</em>Panna Cotta</div><div class="glabel">Panna Cotta — Dessert</div></div>
-      <div class="gcell" data-gcat="mains"><div class="gimg"><em>🍚</em>Chicken Biryani</div><div class="glabel">Chicken Biryani — Advance Order</div></div>
-    </div>
+<div class="gfilter">
+  <button class="gftab active" data-gcat="all">All</button>
+  <button class="gftab" data-gcat="chaat">Chaat & Snacks</button>
+  <button class="gftab" data-gcat="indian">Indian Mains</button>
+  <button class="gftab" data-gcat="catering">Catering</button>
+  <button class="gftab" data-gcat="sweets">Sweets</button>
+</div>
+
+<div class="gallery-wrap">
+  <div class="photo-note">
+    <p><strong>📸 Photos coming soon</strong> — Food images will appear here as we add them. Follow <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener" style="color:var(--olive)">@mammaroti.om</a> on Instagram for our latest dishes and daily specials.</p>
   </div>
-</section>
+  <div class="gallery-grid" id="ggrid">
+    <div class="gcell tall" data-gcat="chaat"><div class="gcell-inner gc-chaat"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Chaat Corner</div>Pani Puri</div></div></div>
+    <div class="gcell" data-gcat="indian"><div class="gcell-inner gc-indian"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Indian Main</div>Butter Chicken</div></div></div>
+    <div class="gcell" data-gcat="indian"><div class="gcell-inner gc-indian"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Indian Main</div>Palak Paneer</div></div></div>
+    <div class="gcell" data-gcat="catering"><div class="gcell-inner gc-catering"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Catering</div>Birthday Party Setup</div></div></div>
+    <div class="gcell tall" data-gcat="catering"><div class="gcell-inner gc-catering"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Catering</div>Live Chaat Station</div></div></div>
+    <div class="gcell" data-gcat="chaat"><div class="gcell-inner gc-chaat"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Chaat Corner</div>Papdi Chaat</div></div></div>
+    <div class="gcell" data-gcat="sweets"><div class="gcell-inner gc-sweet"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Sweets</div>Gulab Jamun</div></div></div>
+    <div class="gcell" data-gcat="indian"><div class="gcell-inner gc-starter"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Starters</div>Chicken 65</div></div></div>
+    <div class="gcell" data-gcat="indian"><div class="gcell-inner gc-chinese"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Chinese</div>Chicken Hakka Noodles</div></div></div>
+    <div class="gcell" data-gcat="sweets"><div class="gcell-inner gc-sweet"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Sweets</div>Panna Cotta</div></div></div>
+    <div class="gcell" data-gcat="indian"><div class="gcell-inner gc-indian"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Rice</div>Chicken Biryani</div></div></div>
+    <div class="gcell" data-gcat="chaat"><div class="gcell-inner gc-bread"><div class="ph-tag">Coming Soon</div><div class="gcell-name"><div class="gcell-cat">Breads</div>Lacha Paratha</div></div></div>
+  </div>
+</div>
 
-<!-- IG STRIP -->
 <div class="ig-strip">
-  <h3>Follow us on Instagram</h3>
-  <p>See our latest dishes, daily specials and behind-the-scenes from Mamma's kitchen</p>
+  <h3>See us on Instagram</h3>
+  <p>Daily specials, behind-the-scenes, and fresh dishes — follow along</p>
   <a href="https://instagram.com/mammaroti.om" class="btn btn-white" target="_blank" rel="noopener">@mammaroti.om →</a>
 </div>
 
@@ -96,7 +128,7 @@
     <div class="ft-brand"><img src="log.jpg" alt="Mamma Roti"/><p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p><div class="ft-social"><a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a><a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a><a href="tel:+96893360321">☎</a></div></div>
     <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
-    <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321" style="color:rgba(255,255,255,.5);text-decoration:none">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p></div>
+    <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p></div>
   </div>
   <div class="ft-bottom"><p>© 2026 Mamma Roti. All rights reserved.</p><p>Built by <a href="https://foodfeedstudio.in">Food Feed Studio</a></p></div>
 </footer>

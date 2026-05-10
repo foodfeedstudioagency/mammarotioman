@@ -8,37 +8,50 @@
   <link rel="canonical" href="https://mammarotioman.com/about.html"/>
   <link rel="stylesheet" href="style.css"/>
   <style>
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-top:1rem}
-.about-img-area{position:relative}
-.about-img-main{width:100%;aspect-ratio:4/5;border-radius:16px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.12)}
-.about-img-main .food-ph{height:100%;background:linear-gradient(135deg,var(--cream-2),var(--cream-3))}
-.about-img-badge{position:absolute;bottom:-20px;right:-20px;width:110px;height:110px;background:var(--olive);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.5;box-shadow:0 8px 28px rgba(74,94,42,.3)}
-.about-text h2{margin-bottom:1.25rem}
-.about-text p{font-size:.95rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.1rem}
-.about-text p strong{color:var(--text);font-weight:500}
-.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid rgba(0,0,0,.08)}
-.stat-n{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--olive)}
-.stat-l{font-size:.75rem;color:var(--text-muted);margin-top:2px}
-.values{background:var(--olive-dk);padding:5rem 2rem}
-.values h2{color:#fff;text-align:center;margin-bottom:.5rem}
-.values .eyebrow{justify-content:center;color:var(--gold)}
-.values .eyebrow::before,.values .eyebrow::after{color:var(--gold)}
-.values-sub{text-align:center;color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:3rem}
-.vals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.val-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:2rem 1.5rem;text-align:center;transition:border-color .2s,background .2s}
-.val-card:hover{border-color:rgba(200,150,60,.35);background:rgba(255,255,255,.08)}
-.val-icon{font-size:2.2rem;margin-bottom:1rem}
-.val-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.5rem}
-.val-desc{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.6}
-.team-sec{background:var(--cream);padding:5rem 2rem;text-align:center}
-.cta-about{background:#fff;padding:4rem 2rem;text-align:center}
-.cta-about-box{max-width:600px;margin:0 auto;background:var(--cream);border-radius:20px;padding:3rem;border:1px solid var(--cream-3)}
-.cta-about-box h3{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:.75rem}
-.cta-about-box p{font-size:.9rem;color:var(--text-muted);margin-bottom:1.75rem;line-height:1.7}
-.cta-about-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.food-ph{width:100%;height:100%;background:linear-gradient(135deg,var(--cream-2),var(--cream-3));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;color:var(--text-muted);font-size:.73rem}
-@media(max-width:768px){.about-grid{grid-template-columns:1fr;gap:3rem}.about-img-badge{display:none}.about-stats{grid-template-columns:repeat(3,1fr)}.vals-grid{grid-template-columns:1fr}}
-@media(max-width:480px){.about-stats{grid-template-columns:1fr 1fr}}
+/* STORY SECTION */
+.story{background:#fff;padding:6rem 2rem}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.story-img-col{position:relative}
+.story-img-main{width:100%;aspect-ratio:3/4;border-radius:4px;overflow:hidden;position:relative}
+.story-img-main .fp{height:100%;background:linear-gradient(160deg,var(--olive-dk) 0%,#2a4010 100%);display:flex;align-items:flex-end;padding:2rem}
+.story-img-main .fp-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:rgba(255,255,255,.5);line-height:1.4}
+.story-img-accent{position:absolute;bottom:-24px;right:-24px;width:180px;height:180px;border-radius:4px;overflow:hidden;border:4px solid #fff;box-shadow:0 8px 32px rgba(0,0,0,.15)}
+.story-img-accent .fp{height:100%;background:linear-gradient(135deg,var(--red),#6a1212)}
+.story-badge{position:absolute;top:2rem;left:-20px;background:var(--red);color:#fff;padding:1rem 1.25rem;border-radius:4px;box-shadow:0 8px 24px rgba(139,26,26,.3)}
+.story-badge-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;line-height:1}
+.story-badge-txt{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.8;margin-top:2px}
+.story-text h2{margin-bottom:1.5rem}
+.story-text p{font-size:.97rem;line-height:1.85;color:var(--text-muted);margin-bottom:1.25rem}
+.story-text p strong{color:var(--text);font-weight:600}
+.story-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:3rem;border:1px solid rgba(0,0,0,.08);border-radius:4px;overflow:hidden}
+.stat-item{padding:1.25rem 1rem;text-align:center;border-right:1px solid rgba(0,0,0,.08)}
+.stat-item:last-child{border-right:none}
+.stat-n{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--olive)}
+.stat-l{font-size:.72rem;color:var(--text-muted);margin-top:3px;text-transform:uppercase;letter-spacing:.06em}
+
+/* QUOTE BREAK */
+.quote-break{background:var(--olive-dk);padding:5rem 2rem;text-align:center;position:relative;overflow:hidden}
+.quote-break::before{content:'"';position:absolute;top:-60px;left:50%;transform:translateX(-50%);font-family:'Playfair Display',serif;font-size:30rem;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
+.quote-break blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.6rem,3.5vw,2.4rem);color:#fff;max-width:700px;margin:0 auto;line-height:1.5;position:relative;z-index:1}
+.quote-break cite{display:block;font-family:'DM Sans',sans-serif;font-size:.8rem;font-style:normal;color:rgba(255,255,255,.4);margin-top:1.5rem;letter-spacing:.1em;text-transform:uppercase}
+
+/* VALUES */
+.values{background:var(--off-white);padding:5rem 2rem}
+.vals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.val-card{background:#fff;border-radius:4px;padding:2.5rem 2rem;border-top:3px solid transparent;transition:border-color .3s,box-shadow .3s;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.val-card:hover{border-top-color:var(--olive);box-shadow:0 8px 32px rgba(0,0,0,.1)}
+.val-card:nth-child(2){border-top-color:var(--red)}
+.val-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:rgba(0,0,0,.06);line-height:1;margin-bottom:.75rem}
+.val-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.6rem}
+.val-desc{font-size:.85rem;color:var(--text-muted);line-height:1.7}
+
+/* CTA */
+.about-cta{background:#fff;padding:5rem 2rem;text-align:center;border-top:1px solid rgba(0,0,0,.06)}
+.about-cta h3{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--text);margin-bottom:.75rem}
+.about-cta p{font-size:.95rem;color:var(--text-muted);max-width:480px;margin:0 auto 2rem;line-height:1.7}
+.about-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+@media(max-width:768px){.story-grid{grid-template-columns:1fr;gap:3rem}.story-img-accent{display:none}.story-badge{display:none}.vals-grid{grid-template-columns:1fr}.story-stats{grid-template-columns:1fr 1fr}.stat-item:last-child{border-top:1px solid rgba(0,0,0,.08);grid-column:span 2;border-right:none}}
   </style>
 </head>
 <body>
@@ -67,55 +80,79 @@
   </div>
 </div>
 
-<!-- ABOUT STORY -->
-<section class="section" style="background:#fff">
+<!-- STORY -->
+<section class="story">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-img-area">
-        <div class="about-img-main"><div class="food-ph"><span style="font-size:3rem;opacity:.25">👩‍🍳</span><span>Photo coming soon</span></div></div>
-        <div class="about-img-badge">Made<br/>With<br/>Love</div>
+    <div class="story-grid">
+      <div class="story-img-col">
+        <div class="story-badge">
+          <div class="story-badge-num">❤️</div>
+          <div class="story-badge-txt">Made with Love</div>
+        </div>
+        <div class="story-img-main">
+          <div class="fp"><div class="fp-label">"Every meal tells<br/>a story of home."</div></div>
+        </div>
+        <div class="story-img-accent">
+          <div class="fp food-ph-chaat"></div>
+        </div>
       </div>
-      <div class="about-text">
+      <div class="story-text">
         <div class="eyebrow">Who We Are</div>
         <h2 class="sec-title">Born from a kitchen,<br/>built with <em>love</em></h2>
-        <p>Mamma Roti started with one simple belief — <strong>great food doesn't need a fancy address.</strong> From the streets of Mumbai to the heart of Muscat, every dish we make carries the soul of home cooking.</p>
-        <p>We're a cloud kitchen serving Muscat families, office teams, and celebration tables — with fresh ingredients, authentic recipes, and the kind of flavours that remind you of home.</p>
-        <p>From a quick weekday lunch to a full catered birthday party — <strong>Mamma Roti is your table, your way.</strong> Whether it's a bowl of Pani Puri on a Tuesday afternoon or Chicken Biryani for 50 guests, we bring the same love to every order.</p>
-        <p>We believe food is more than fuel — it's memory, comfort, and connection. That's what drives everything we make.</p>
-        <div class="about-stats">
-          <div><div class="stat-n">100%</div><div class="stat-l">Fresh Daily</div></div>
-          <div><div class="stat-n">~1hr</div><div class="stat-l">Delivery Time</div></div>
-          <div><div class="stat-n">All</div><div class="stat-l">Over Muscat</div></div>
+        <p>Mamma Roti started with one simple belief — <strong>great food doesn't need a fancy address.</strong> From the streets of Mumbai to the heart of Muscat, every dish carries the soul of home cooking.</p>
+        <p>We're a cloud kitchen serving Muscat families, office teams, and celebration tables — with fresh ingredients, authentic recipes, and flavours that remind you of home.</p>
+        <p>From a quick weekday lunch to a full catered birthday party — <strong>Mamma Roti is your table, your way.</strong> We believe food is more than fuel — it's memory, comfort, and connection.</p>
+        <div style="margin-top:2rem"><a href="menu.html" class="btn btn-olive">Explore Our Menu →</a></div>
+        <div class="story-stats">
+          <div class="stat-item"><div class="stat-n">100%</div><div class="stat-l">Fresh Daily</div></div>
+          <div class="stat-item"><div class="stat-n">~1hr</div><div class="stat-l">Delivery</div></div>
+          <div class="stat-item"><div class="stat-n">All</div><div class="stat-l">Muscat</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- QUOTE -->
+<div class="quote-break">
+  <blockquote>"Good food is the foundation of genuine happiness."</blockquote>
+  <cite>— The Mamma Roti Philosophy</cite>
+</div>
+
 <!-- VALUES -->
 <section class="values">
-  <div class="container">
-    <div class="eyebrow" style="display:flex;justify-content:center;color:var(--gold)">What We Stand For</div>
-    <h2 class="sec-title" style="color:#fff;text-align:center;margin-bottom:.5rem">The Mamma Roti Way</h2>
-    <p class="values-sub">Three things we never compromise on</p>
+  <div class="container" style="text-align:center">
+    <div class="eyebrow" style="justify-content:center">What We Stand For</div>
+    <h2 class="sec-title">The Mamma Roti Way</h2>
+    <p class="sec-sub" style="margin:0 auto">Three things we never compromise on — ever.</p>
     <div class="vals-grid">
-      <div class="val-card"><div class="val-icon">❤️</div><div class="val-title">Made with Love</div><div class="val-desc">Every meal is prepared with genuine care and passion. No shortcuts, no compromise. Just real food, made right.</div></div>
-      <div class="val-card"><div class="val-icon">🌿</div><div class="val-title">Fresh Ingredients</div><div class="val-desc">Only the finest ingredients, sourced fresh every day. We cook what we'd serve our own family.</div></div>
-      <div class="val-card"><div class="val-icon">😊</div><div class="val-title">Great Vibes</div><div class="val-desc">Good food, good mood, good people. Every interaction with Mamma Roti should leave you smiling.</div></div>
+      <div class="val-card">
+        <div class="val-num">01</div>
+        <div class="val-title">Made with Love</div>
+        <div class="val-desc">Every single meal is prepared with genuine care and passion. No shortcuts, no compromise. Just real food, made right — the way Mamma intended.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-num">02</div>
+        <div class="val-title">Fresh Ingredients</div>
+        <div class="val-desc">Only the finest ingredients, sourced and cooked fresh every single day. We cook what we'd proudly serve our own family at every meal.</div>
+      </div>
+      <div class="val-card">
+        <div class="val-num">03</div>
+        <div class="val-title">Great Vibes Always</div>
+        <div class="val-desc">Good food, good mood, good people. Every interaction with Mamma Roti should leave you smiling — from ordering to the last bite.</div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="cta-about">
+<section class="about-cta">
   <div class="container">
-    <div class="cta-about-box">
-      <h3>Taste the love yourself</h3>
-      <p>Order your first meal from Mamma Roti today — or planning an event? Download our catering menu and let's make your celebration unforgettable.</p>
-      <div class="cta-about-btns">
-        <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="btn btn-olive" target="_blank" rel="noopener">Order Now →</a>
-        <a href="mmom.pdf" class="btn btn-outline" download>⬇ Catering Menu</a>
-      </div>
+    <h3>Taste the love yourself</h3>
+    <p>Order your first meal from Mamma Roti today — or download our catering menu and let's make your next celebration unforgettable.</p>
+    <div class="about-cta-btns">
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="btn btn-olive" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <a href="mmom.pdf" class="btn btn-outline-olive" download>⬇ Catering Menu</a>
     </div>
   </div>
 </section>
@@ -125,7 +162,7 @@
     <div class="ft-brand"><img src="log.jpg" alt="Mamma Roti"/><p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p><div class="ft-social"><a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a><a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a><a href="tel:+96893360321">☎</a></div></div>
     <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
-    <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321" style="color:rgba(255,255,255,.5);text-decoration:none">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5);text-decoration:none">@mammaroti.om</a></p></div>
+    <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">@mammaroti.om</a></p></div>
   </div>
   <div class="ft-bottom"><p>© 2026 Mamma Roti. All rights reserved.</p><p>Built by <a href="https://foodfeedstudio.in">Food Feed Studio</a></p></div>
 </footer>
