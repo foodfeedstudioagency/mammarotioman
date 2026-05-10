@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Mamma Roti | Indian Food Delivery Muscat</title>
+  <meta name="description" content="Full menu of Mamma Roti cloud kitchen in Muscat. Chaats, samosas, biryanis, Indian curries, Chinese dishes, breads, sweets and more. Order on WhatsApp for delivery across Muscat." />
+  <meta name="keywords" content="Mamma Roti menu, Indian food menu Muscat, chaat Muscat, biryani Muscat, cloud kitchen menu Oman, pani puri Muscat, butter chicken Muscat" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mammarotioman.com/menu.html" />
+
+  <meta property="og:title" content="Menu — Mamma Roti" />
+  <meta property="og:description" content="Full Indian food menu with delivery across Muscat. Order on WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mammarotioman.com/menu.html" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Mamma Roti Menu",
+    "url": "https://mammarotioman.com/menu.html",
+    "hasMenuSection": [
+      { "@type": "MenuSection", "name": "Chaat Corner" },
+      { "@type": "MenuSection", "name": "Samosa" },
+      { "@type": "MenuSection", "name": "Breads and Rotis" },
+      { "@type": "MenuSection", "name": "Indian Main Veg" },
+      { "@type": "MenuSection", "name": "Indian Main Non Veg" },
+      { "@type": "MenuSection", "name": "Chinese" },
+      { "@type": "MenuSection", "name": "Rice" },
+      { "@type": "MenuSection", "name": "Sweets" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --olive: #4a5e2a;
+      --olive-light: #6b7f3e;
+      --red: #8b1a1a;
+      --cream: #faf6ee;
+      --cream-dark: #f0e8d8;
+      --charcoal: #1a1a18;
+      --text: #2d2d2b;
+      --text-muted: #6b6b67;
+      --gold: #c8963c;
+      --veg: #2d7a2d;
+      --nonveg: #8b1a1a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.4;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      padding: 0 2rem;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(250, 246, 238, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(74, 94, 42, 0.15);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo img { height: 44px; width: auto; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover, .nav-links a.active { color: var(--olive); }
+
+    .nav-cta {
+      background: var(--olive);
+      color: white !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2px;
+    }
+
+    .nav-cta:hover { background: var(--olive-light) !important; }
+
+    /* HERO */
+    .menu-hero {
+      background: var(--charcoal);
+      padding: 8rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .menu-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 100% at 30% 50%, rgba(139,26,26,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 80% at 80% 50%, rgba(74,94,42,0.1) 0%, transparent 60%);
+    }
+
+    .menu-hero-inner { position: relative; z-index: 2; }
+
+    .menu-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .menu-hero-eyebrow::before, .menu-hero-eyebrow::after {
+      content: '';
+      display: block;
+      width: 30px; height: 1px;
+      background: var(--gold);
+    }
+
+    .menu-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 900;
+      color: white;
+      margin-bottom: 0.75rem;
+    }
+
+    .menu-hero p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 2rem;
+    }
+
+    /* DELIVERY BANNER */
+    .delivery-banner {
+      background: var(--red);
+      color: white;
+      text-align: center;
+      padding: 0.85rem 2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    .delivery-banner span { opacity: 0.6; margin: 0 1rem; }
+
+    /* FILTER TABS */
+    .filter-bar {
+      background: white;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      position: sticky;
+      top: 70px;
+      z-index: 800;
+      padding: 0 2rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .filter-bar::-webkit-scrollbar { display: none; }
+
+    .filter-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0;
+      white-space: nowrap;
+    }
+
+    .filter-btn {
+      padding: 1rem 1.25rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .filter-btn:hover { color: var(--olive); }
+    .filter-btn.active { color: var(--olive); border-bottom-color: var(--olive); }
+
+    /* MENU BODY */
+    .menu-body {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    .menu-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .menu-section-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .menu-section-icon {
+      width: 44px; height: 44px;
+      background: var(--olive);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .menu-section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--charcoal);
+    }
+
+    .menu-section-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1px;
+      background: rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .menu-item {
+      background: white;
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: background 0.15s;
+    }
+
+    .menu-item:hover { background: var(--cream); }
+
+    .item-left {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      flex: 1;
+    }
+
+    .veg-dot {
+      width: 14px; height: 14px;
+      border-radius: 2px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .veg-dot.veg { border: 1.5px solid var(--veg); }
+    .veg-dot.veg::after {
+      content: '';
+      display: block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--veg);
+      margin: 2.5px auto;
+    }
+
+    .veg-dot.nonveg { border: 1.5px solid var(--nonveg); }
+    .veg-dot.nonveg::after {
+      content: '';
+      display: block;
+      width: 0; height: 0;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-bottom: 6px solid var(--nonveg);
+      margin: 3px auto 0;
+    }
+
+    .item-name {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .item-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      font-style: italic;
+    }
+
+    .item-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--olive);
+      white-space: nowrap;
+      flex-shrink: 0;
+      text-align: right;
+    }
+
+    .item-price .currency {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 1px;
+    }
+
+    /* ADVANCE TAG */
+    .advance-tag {
+      display: inline-block;
+      background: rgba(200,150,60,0.12);
+      color: var(--gold);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 2px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* ORDER CTA STRIP */
+    .order-strip {
+      position: sticky;
+      bottom: 0;
+      background: var(--olive);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      z-index: 700;
+    }
+
+    .order-strip a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.04em;
+    }
+
+    /* WHATSAPP FLOAT */
+    .wa-float {
+      position: fixed;
+      bottom: 80px;
+      right: 28px;
+      z-index: 800;
+      width: 58px; height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+      text-decoration: none;
+      animation: wa-pulse 2.5s ease-in-out infinite;
+      transition: transform 0.2s;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1);
+      animation: none;
+    }
+
+    .wa-float svg { width: 30px; height: 30px; }
+
+    @keyframes wa-pulse {
+      0%, 100% { box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4); }
+      50% { box-shadow: 0 6px 36px rgba(37, 211, 102, 0.65), 0 0 0 10px rgba(37, 211, 102, 0.08); }
+    }
+
+    /* LEGEND */
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .legend-item { display: flex; align-items: center; gap: 6px; }
+
+    /* FOOTER */
+    footer {
+      background: var(--charcoal);
+      color: white;
+      padding: 2.5rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .footer-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.4);
+      margin-top: 2px;
+    }
+
+    .footer-links { display: flex; gap: 2rem; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.82rem; transition: color 0.2s; }
+    .footer-links a:hover { color: white; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--olive);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 2px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.25s;
+    }
+
+    .btn-primary:hover { background: var(--olive-light); }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 1.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .footer-bottom p { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+
+    @media (max-width: 768px) {
+      .menu-items { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .legend { flex-wrap: wrap; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="log.jpg" alt="Mamma Roti Logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="index.html#catering">Catering</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li>
+        <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20place%20an%20order!" class="nav-cta" target="_blank" rel="noopener">
+          Order Now
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- MENU HERO -->
+  <div class="menu-hero">
+    <div class="menu-hero-inner">
+      <div class="menu-hero-eyebrow">Delivery All Over Muscat</div>
+      <h1>Our Menu</h1>
+      <p>Fresh ingredients · Authentic recipes · Made with love</p>
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20place%20an%20order!" target="_blank" rel="noopener"
+        style="display:inline-flex;align-items:center;gap:10px;background:#25D366;color:white;padding:0.85rem 2rem;border-radius:2px;text-decoration:none;font-size:0.9rem;font-weight:600;letter-spacing:0.04em;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Order on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- DELIVERY BANNER -->
+  <div class="delivery-banner">
+    🎉 40% OFF on orders above 5 OMR
+    <span>|</span>
+    🚗 FREE delivery on orders above 10 OMR
+    <span>|</span>
+    ~1 hour delivery · Starts from 1.200 OMR
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <button class="filter-btn active" onclick="filterSection('all', this)">All</button>
+      <button class="filter-btn" onclick="filterSection('chaat', this)">Chaat</button>
+      <button class="filter-btn" onclick="filterSection('samosa', this)">Samosa</button>
+      <button class="filter-btn" onclick="filterSection('breads', this)">Breads</button>
+      <button class="filter-btn" onclick="filterSection('eggs', this)">Eggs</button>
+      <button class="filter-btn" onclick="filterSection('sandwiches', this)">Sandwiches</button>
+      <button class="filter-btn" onclick="filterSection('starters', this)">Starters</button>
+      <button class="filter-btn" onclick="filterSection('bbq', this)">BBQ</button>
+      <button class="filter-btn" onclick="filterSection('chinese', this)">Chinese</button>
+      <button class="filter-btn" onclick="filterSection('indian-veg', this)">Indian Veg</button>
+      <button class="filter-btn" onclick="filterSection('indian-nonveg', this)">Indian Non-Veg</button>
+      <button class="filter-btn" onclick="filterSection('rice', this)">Rice</button>
+      <button class="filter-btn" onclick="filterSection('sweets', this)">Sweets</button>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="veg-dot veg"></div>
+      <span>Vegetarian</span>
+    </div>
+    <div class="legend-item">
+      <div class="veg-dot nonveg"></div>
+      <span>Non-Vegetarian</span>
+    </div>
+    <div class="legend-item">
+      <span class="advance-tag">Advance</span>
+      <span>Advance order required</span>
+    </div>
+  </div>
+
+  <!-- MENU SECTIONS -->
+  <div class="menu-body">
+
+    <!-- CHAAT CORNER -->
+    <div class="menu-section" data-section="chaat" id="chaat">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🌮</div>
+        <div>
+          <div class="menu-section-title">Chaat Corner</div>
+          <div class="menu-section-note">Mumbai street food favourites</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Pani Puri</div></div></div>
+          <div class="item-price">0.500<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Dahi Sev Puri</div></div></div>
+          <div class="item-price">0.600<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Papdi Chaat</div></div></div>
+          <div class="item-price">0.800<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Mumbai Style Vada Pav</div></div></div>
+          <div class="item-price">0.400<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Dabeli <span class="advance-tag">Advance / Bulk</span></div></div></div>
+          <div class="item-price">0.500<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Dahi Wada</div></div></div>
+          <div class="item-price">0.900<span class="currency">baiza</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAMOSA -->
+    <div class="menu-section" data-section="samosa" id="samosa">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🥟</div>
+        <div>
+          <div class="menu-section-title">Samosa</div>
+          <div class="menu-section-note">Fresh fried daily</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Samosa Small (3 pcs)</div></div></div>
+          <div class="item-price">0.200<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Samosa Big (2 pcs)</div></div></div>
+          <div class="item-price">0.300<span class="currency">baiza</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BREADS & ROTIS -->
+    <div class="menu-section" data-section="breads" id="breads">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🫓</div>
+        <div>
+          <div class="menu-section-title">Breads & Rotis</div>
+          <div class="menu-section-note">Made fresh to order</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Chapati Ata (2 pcs)</div></div></div>
+          <div class="item-price">0.100<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Thepla</div></div></div>
+          <div class="item-price">0.100<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Paratha Maida / Ata</div></div></div>
+          <div class="item-price">0.100<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Lacha Paratha</div></div></div>
+          <div class="item-price">0.300<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Pudina Lacha Paratha</div></div></div>
+          <div class="item-price">0.400<span class="currency">baiza</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EGGS -->
+    <div class="menu-section" data-section="eggs" id="eggs">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🍳</div>
+        <div>
+          <div class="menu-section-title">Eggs</div>
+          <div class="menu-section-note">All styles available</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">All Types of Eggs</div><div class="item-note">Scrambled / Boiled / Fried / Omelette</div></div></div>
+          <div class="item-price">0.500<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Eggs Kejriwal</div></div></div>
+          <div class="item-price">1.200<span class="currency">OMR</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Eggs Ghotala</div></div></div>
+          <div class="item-price">1.200<span class="currency">OMR</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SANDWICHES / WRAPS -->
+    <div class="menu-section" data-section="sandwiches" id="sandwiches">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🥙</div>
+        <div>
+          <div class="menu-section-title">Sandwiches & Wraps</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Hot Dog Sandwich</div></div></div>
+          <div class="item-price">0.300<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Sandwich</div></div></div>
+          <div class="item-price">0.300<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Omelette Sandwich</div></div></div>
+          <div class="item-price">0.300<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Mumbai Sandwich</div></div></div>
+          <div class="item-price">0.500<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Mayo Sandwich</div></div></div>
+          <div class="item-price">0.500<span class="currency">baiza</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STARTERS -->
+    <div class="menu-section" data-section="starters" id="starters">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🍗</div>
+        <div>
+          <div class="menu-section-title">Starters</div>
+          <div class="menu-section-note">Half / Full portions available</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken 65</div></div></div>
+          <div class="item-price">1.500 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Pakora</div></div></div>
+          <div class="item-price">1.500 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Paneer 65</div></div></div>
+          <div class="item-price">1.200 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Paneer Pakora</div></div></div>
+          <div class="item-price">1.200 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BBQ ADVANCE ORDER -->
+    <div class="menu-section" data-section="bbq" id="bbq">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🔥</div>
+        <div>
+          <div class="menu-section-title">BBQ <span class="advance-tag">Advance Order</span></div>
+          <div class="menu-section-note">Must be ordered in advance</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Haryali Chicken</div></div></div>
+          <div class="item-price">1.800 / 3.000<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Malai Chicken</div></div></div>
+          <div class="item-price">1.800 / 3.000<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Tikka</div></div></div>
+          <div class="item-price">1.800 / 3.000<span class="currency">OMR · Half / Full</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHINESE -->
+    <div class="menu-section" data-section="chinese" id="chinese">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🥢</div>
+        <div>
+          <div class="menu-section-title">Chinese</div>
+          <div class="menu-section-note">Indo-Chinese favourites</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Veg Hakka Noodles</div></div></div>
+          <div class="item-price">1.000 / 1.500<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Egg Hakka Noodles</div></div></div>
+          <div class="item-price">1.200 / 1.800<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Hakka Noodles</div></div></div>
+          <div class="item-price">2.000 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Veg Manchurian</div></div></div>
+          <div class="item-price">1.000 / 1.800<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Kung Pao</div></div></div>
+          <div class="item-price">1.500 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Manchurian</div></div></div>
+          <div class="item-price">1.500 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Chilli</div></div></div>
+          <div class="item-price">1.500 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Veg Fried Rice</div></div></div>
+          <div class="item-price">1.000 / 1.200<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Egg Fried Rice</div></div></div>
+          <div class="item-price">1.400 / 1.800<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Fried Rice</div></div></div>
+          <div class="item-price">2.000 / 2.200<span class="currency">OMR · Half / Full</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INDIAN MAIN VEG -->
+    <div class="menu-section" data-section="indian-veg" id="indian-veg">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🍛</div>
+        <div>
+          <div class="menu-section-title">Indian Main — Vegetarian</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Chole Bhature</div></div></div>
+          <div class="item-price">1.200<span class="currency">OMR</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Paneer Lababdar</div></div></div>
+          <div class="item-price">1.400 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Alu Gobi</div></div></div>
+          <div class="item-price">1.000 / 1.800<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Dal Tadka</div></div></div>
+          <div class="item-price">0.800 / 1.500<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Dal Panchratna</div></div></div>
+          <div class="item-price">1.200 / 1.800<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Dal Makhani</div></div></div>
+          <div class="item-price">1.200 / 1.800<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Palak Paneer</div></div></div>
+          <div class="item-price">1.400 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INDIAN MAIN NON VEG -->
+    <div class="menu-section" data-section="indian-nonveg" id="indian-nonveg">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🍖</div>
+        <div>
+          <div class="menu-section-title">Indian Main — Non Vegetarian</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Kadhai</div></div></div>
+          <div class="item-price">1.500 / 2.600<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Bhuna</div></div></div>
+          <div class="item-price">1.500 / 2.600<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Butter Chicken</div></div></div>
+          <div class="item-price">1.500 / 2.600<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Punjabi Chicken</div></div></div>
+          <div class="item-price">1.500 / 2.600<span class="currency">OMR · Half / Full</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RICE -->
+    <div class="menu-section" data-section="rice" id="rice">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🍚</div>
+        <div>
+          <div class="menu-section-title">Rice & Biryani <span class="advance-tag">Advance Orders Only</span></div>
+          <div class="menu-section-note">Must be pre-ordered</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Veg Biryani</div></div></div>
+          <div class="item-price">1.200 / 2.200<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Paneer Veg Biryani</div></div></div>
+          <div class="item-price">1.400 / 2.600<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Biryani</div></div></div>
+          <div class="item-price">1.600 / 2.400<span class="currency">OMR · Half / Full</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot nonveg"></div><div><div class="item-name">Chicken Tikka Biryani</div></div></div>
+          <div class="item-price">2.000 / 2.600<span class="currency">OMR · Half / Full</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SWEETS -->
+    <div class="menu-section" data-section="sweets" id="sweets">
+      <div class="menu-section-header">
+        <div class="menu-section-icon">🍮</div>
+        <div>
+          <div class="menu-section-title">Sweets</div>
+          <div class="menu-section-note">Some items require advance order</div>
+        </div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Gulab Jamun</div></div></div>
+          <div class="item-price">0.300<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Jalebi</div></div></div>
+          <div class="item-price">0.300<span class="currency">baiza</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Badami Kheer <span class="advance-tag">Advance</span></div></div></div>
+          <div class="item-price">1.000<span class="currency">OMR</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Rabri <span class="advance-tag">Advance</span></div></div></div>
+          <div class="item-price">1.000<span class="currency">OMR</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Chocolate Mousse <span class="advance-tag">Advance</span></div></div></div>
+          <div class="item-price">1.200<span class="currency">OMR</span></div>
+        </div>
+        <div class="menu-item">
+          <div class="item-left"><div class="veg-dot veg"></div><div><div class="item-name">Panna Cotta <span class="advance-tag">Advance</span></div></div></div>
+          <div class="item-price">1.500<span class="currency">OMR</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end menu-body -->
+
+  <!-- ORDER STRIP -->
+  <div class="order-strip">
+    <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20place%20an%20order!" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Ready to order? Send us a WhatsApp message →
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Mamma Roti</div>
+        <div class="footer-tagline">From Street to Soul</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="index.html#catering">Catering</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20place%20an%20order!" class="btn-primary" target="_blank" rel="noopener">
+        Order Now
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Mamma Roti. All rights reserved. Ghubrah, Muscat, Oman.</p>
+      <p>Built by <a href="https://foodfeedstudio.in" style="color:rgba(255,255,255,0.4);text-decoration:none;">Food Feed Studio</a></p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti!%20I%20saw%20your%20menu%20and%20wanted%20to%20order." class="wa-float" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    function filterSection(section, btn) {
+      // Update active button
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const sections = document.querySelectorAll('.menu-section');
+      sections.forEach(s => {
+        if (section === 'all' || s.dataset.section === section) {
+          s.style.display = '';
+        } else {
+          s.style.display = 'none';
+        }
+      });
+
+      // Scroll to first visible section
+      if (section !== 'all') {
+        const target = document.getElementById(section);
+        if (target) {
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 50);
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
