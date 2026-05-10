@@ -483,7 +483,10 @@ footer {
   align-items: start;
 }
 .ft-brand img {
-  height: 130px; margin-bottom: 1rem;
+  height: 130px;
+  width: 180px;
+  margin-right: -95px;  
+  margin-bottom: -0.5rem;
   filter: brightness(0) invert(1);
 }
 .ft-brand p {
