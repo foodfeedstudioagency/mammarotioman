@@ -8,46 +8,21 @@
   <meta name="robots" content="index,follow"/>
   <link rel="canonical" href="https://mammarotioman.com/menu.html"/>
   <link rel="stylesheet" href="style.css"/>
-  <style>
-.filter-bar{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:70px;z-index:800;padding:0 2rem;overflow-x:auto;scrollbar-width:none}
-.filter-bar::-webkit-scrollbar{display:none}
-.fb-inner{max-width:1160px;margin:0 auto;display:flex;gap:0;white-space:nowrap}
-.fbtab{padding:.9rem 1.1rem;font-size:.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif;white-space:nowrap}
-.fbtab:hover{color:var(--olive)}
-.fbtab.active{color:var(--olive);border-bottom-color:var(--olive)}
-.menu-body{max-width:1160px;margin:0 auto;padding:3rem 2rem 6rem}
-.msec{margin-bottom:3.5rem}
-.msec-hd{display:flex;align-items:center;gap:1.25rem;margin-bottom:1.25rem;padding-bottom:.85rem;border-bottom:1px solid rgba(0,0,0,.07)}
-.msec-icon{width:42px;height:42px;background:var(--olive);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
-.msec-title{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--charcoal)}
-.msec-note{font-size:.75rem;color:var(--text-muted);font-style:italic;margin-top:.15rem}
-.mitems{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.06);border-radius:8px;overflow:hidden}
-.mitem{background:#fff;padding:.9rem 1.1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;transition:background .15s}
-.mitem:hover{background:var(--cream)}
-.ml{display:flex;align-items:flex-start;gap:9px;flex:1}
-.vd{width:13px;height:13px;border-radius:2px;flex-shrink:0;margin-top:3px}
-.vd.v{border:1.5px solid #2d7a2d}.vd.v::after{content:'';display:block;width:5px;height:5px;border-radius:50%;background:#2d7a2d;margin:2.5px auto}
-.vd.nv{border:1.5px solid var(--red)}.vd.nv::after{content:'';display:block;width:0;height:0;border-left:2.5px solid transparent;border-right:2.5px solid transparent;border-bottom:5.5px solid var(--red);margin:3px auto 0}
-.iname{font-size:.88rem;font-weight:500;color:var(--text);line-height:1.3}
-.inote{font-size:.73rem;color:var(--text-muted);margin-top:2px;font-style:italic}
-.iprice{font-family:'Playfair Display',serif;font-size:.92rem;font-weight:700;color:var(--olive);white-space:nowrap;flex-shrink:0;text-align:right}
-.iprice .cur{font-family:'DM Sans',sans-serif;font-size:.67rem;font-weight:400;color:var(--text-muted);display:block;margin-top:1px}
-.adv{display:inline-block;background:rgba(200,150,60,.1);color:var(--gold);font-size:.62rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-left:5px;vertical-align:middle}
-.legend{display:flex;align-items:center;gap:1.5rem;padding:.85rem 2rem;max-width:1160px;margin:0 auto;font-size:.76rem;color:var(--text-muted)}
-.li{display:flex;align-items:center;gap:5px}
-.order-strip{position:sticky;bottom:0;background:var(--olive);color:#fff;padding:.9rem 2rem;text-align:center;z-index:700}
-.order-strip a{color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;display:inline-flex;align-items:center;gap:8px}
-@media(max-width:600px){.mitems{grid-template-columns:1fr}}
-  </style>
 </head>
 <body>
 <nav class="navbar" id="nb">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="log.jpg" alt="Mamma Roti"/></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li><li><a href="menu.html" class="active">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
-      <li><a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a>
+    </div>
     <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -238,11 +213,17 @@
     Ready to order? Send us a WhatsApp →
   </a>
 </div>
+<div style="background:var(--olive-dk);overflow:hidden;line-height:0;margin-top:-2px">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;display:block;width:100%">
+    <path d="M0,48 C240,0 480,48 720,24 C960,0 1200,48 1440,24 L1440,48 Z" fill="#374820"/>
+  </svg>
+</div>
+<footer>
 
 <footer>
   <div class="ft-grid">
     <div class="ft-brand"><img src="log.jpg" alt="Mamma Roti"/><p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p><div class="ft-social"><a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a><a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a><a href="tel:+96893360321">☎</a></div></div>
-    <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    
     <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
     <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321" style="color:rgba(255,255,255,.5);text-decoration:none">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5);text-decoration:none">@mammaroti.om</a></p></div>
   </div>

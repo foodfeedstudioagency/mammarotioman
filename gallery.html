@@ -7,64 +7,21 @@
   <meta name="robots" content="index,follow"/>
   <link rel="canonical" href="https://mammarotioman.com/gallery.html"/>
   <link rel="stylesheet" href="style.css"/>
-  <style>
-.g-intro{background:#fff;padding:3rem 2rem 0;text-align:center}
-.g-intro p{font-size:.95rem;color:var(--text-muted);max-width:500px;margin:.5rem auto 0;line-height:1.7}
-.gfilter{display:flex;justify-content:center;gap:.4rem;flex-wrap:wrap;padding:2rem 2rem 0;background:#fff}
-.gftab{padding:.4rem 1.05rem;border-radius:30px;font-size:.8rem;font-weight:600;cursor:pointer;border:1.5px solid rgba(74,94,42,.2);background:#fff;color:var(--text-muted);transition:all .2s;font-family:'DM Sans',sans-serif}
-.gftab:hover{border-color:var(--olive);color:var(--olive)}
-.gftab.active{background:var(--olive);color:#fff;border-color:var(--olive)}
-
-/* Masonry-style gallery */
-.gallery-wrap{background:#fff;padding:2rem 2rem 5rem}
-.gallery-grid{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.gcell{border-radius:8px;overflow:hidden;cursor:pointer;position:relative;box-shadow:0 2px 12px rgba(0,0,0,.08);transition:transform .3s,box-shadow .3s}
-.gcell:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.16)}
-.gcell.tall{grid-row:span 2}
-.gcell-inner{width:100%;height:100%;min-height:220px;position:relative;overflow:hidden;display:flex;align-items:flex-end}
-.gcell.tall .gcell-inner{min-height:460px}
-/* Each cell gets a rich gradient bg, no emojis */
-.gc-chaat{background:linear-gradient(145deg,#6b3a1a 0%,#8b5e2a 40%,#5a2e10 100%)}
-.gc-indian{background:linear-gradient(145deg,#5a1a10 0%,#8b2a1a 40%,#4a1008 100%)}
-.gc-chinese{background:linear-gradient(145deg,#1a3a1a 0%,#2d5e2a 40%,#0a2808 100%)}
-.gc-starter{background:linear-gradient(145deg,#4a1a10 0%,#8b1a1a 40%,#3a0808 100%)}
-.gc-sweet{background:linear-gradient(145deg,#3a1a4a 0%,#6b2a8b 40%,#2a0838 100%)}
-.gc-catering{background:linear-gradient(145deg,#1a2a4a 0%,#2a3a7a 40%,#0a1438 100%)}
-.gc-bread{background:linear-gradient(145deg,#4a3a10 0%,#8b6a1a 40%,#3a2808 100%)}
-
-/* Dish name watermark style */
-.gcell-name{position:absolute;bottom:0;left:0;right:0;padding:1.5rem 1.25rem .85rem;background:linear-gradient(transparent,rgba(0,0,0,.6));color:#fff;font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;letter-spacing:.02em;transform:translateY(100%);transition:transform .3s}
-.gcell:hover .gcell-name{transform:translateY(0)}
-.gcell-cat{font-family:'DM Sans',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.25rem}
-
-/* Texture overlay on each cell */
-.gcell-inner::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='none'/%3E%3Ccircle cx='2' cy='2' r='.5' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E");pointer-events:none}
-
-/* Photo coming soon tag */
-.ph-tag{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.12);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);font-size:.6rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .65rem;border-radius:30px}
-
-/* IG STRIP */
-.ig-strip{background:var(--olive-dk);padding:3.5rem 2rem;text-align:center}
-.ig-strip h3{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#fff;margin-bottom:.5rem}
-.ig-strip p{font-size:.9rem;color:rgba(255,255,255,.5);margin-bottom:1.75rem}
-
-/* HOW TO ADD PHOTOS note */
-.photo-note{background:var(--off-white);border-left:3px solid var(--olive);padding:1.25rem 1.5rem;margin:0 2rem;max-width:1160px;margin-left:auto;margin-right:auto;border-radius:0 4px 4px 0;margin-bottom:2rem}
-.photo-note p{font-size:.82rem;color:var(--text-muted);line-height:1.6}
-.photo-note strong{color:var(--text)}
-
-@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr)}.gcell.tall{grid-row:span 1}.gcell.tall .gcell-inner{min-height:220px}}
-@media(max-width:480px){.gallery-grid{grid-template-columns:1fr}}
-  </style>
 </head>
 <body>
 <nav class="navbar" id="nb">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="log.jpg" alt="Mamma Roti"/></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="contact.html">Contact</a></li>
-      <li><a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a>
+    </div>
     <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -122,11 +79,16 @@
   <p>Daily specials, behind-the-scenes, and fresh dishes — follow along</p>
   <a href="https://instagram.com/mammaroti.om" class="btn btn-white" target="_blank" rel="noopener">@mammaroti.om →</a>
 </div>
-
+<div style="background:var(--olive-dk);overflow:hidden;line-height:0;margin-top:-2px">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;display:block;width:100%">
+    <path d="M0,48 C240,0 480,48 720,24 C960,0 1200,48 1440,24 L1440,48 Z" fill="#374820"/>
+  </svg>
+</div>
+<footer>
 <footer>
   <div class="ft-grid">
     <div class="ft-brand"><img src="log.jpg" alt="Mamma Roti"/><p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p><div class="ft-social"><a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a><a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a><a href="tel:+96893360321">☎</a></div></div>
-    <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    
     <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
     <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p></div>
   </div>

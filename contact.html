@@ -7,59 +7,21 @@
   <meta name="robots" content="index,follow"/>
   <link rel="canonical" href="https://mammarotioman.com/contact.html"/>
   <link rel="stylesheet" href="style.css"/>
-  <style>
-.contact-wrap{background:#fff;padding:5rem 2rem}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;max-width:1160px;margin:0 auto}
-.contact-left h2{margin-bottom:2rem}
-.citem{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(0,0,0,.07)}
-.citem:last-of-type{border-bottom:none}
-.cicon{width:44px;height:44px;background:var(--olive-dk);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.cicon svg{width:20px;height:20px}
-.clabel{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:3px}
-.cval{font-size:.97rem;color:var(--text);font-weight:500}
-.cval a{color:var(--olive);text-decoration:none}
-.cval a:hover{text-decoration:underline}
-
-/* Hours card */
-.hours-card{background:var(--olive-dk);border-radius:8px;padding:2rem;margin-top:2rem}
-.hours-card h4{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem}
-.hrow{display:flex;justify-content:space-between;align-items:center;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.hrow:last-child{border-bottom:none}
-.hday{font-size:.82rem;color:rgba(255,255,255,.55)}
-.htime{font-size:.82rem;color:#fff;font-weight:600}
-.htime.closed{color:rgba(255,255,255,.3);font-weight:400}
-
-/* Delivery box */
-.del-box{border:1px solid rgba(74,94,42,.15);border-radius:8px;padding:1.75rem;margin-top:1.5rem;border-left:4px solid var(--olive)}
-.del-box h4{font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--olive);margin-bottom:1rem}
-.del-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
-.del-list li{font-size:.85rem;color:var(--text-muted);display:flex;align-items:flex-start;gap:.6rem;line-height:1.5}
-.del-list li::before{content:'→';color:var(--olive);flex-shrink:0;margin-top:.05rem}
-
-/* Map */
-.map-box{border-radius:8px;overflow:hidden;box-shadow:0 4px 28px rgba(0,0,0,.1)}
-.map-box iframe{width:100%;height:420px;border:0;display:block}
-.map-btn{margin-top:1rem;text-align:center}
-
-/* WA ORDER SECTION */
-.wa-order{background:var(--red);padding:5rem 2rem;text-align:center}
-.wa-order h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:900;color:#fff;margin-bottom:.6rem}
-.wa-order p{font-size:.95rem;color:rgba(255,255,255,.65);margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7}
-.wa-big-btn{display:inline-flex;align-items:center;gap:12px;background:#fff;color:var(--red);padding:1rem 2.5rem;border-radius:30px;text-decoration:none;font-size:1rem;font-weight:700;transition:all .25s;box-shadow:0 8px 32px rgba(0,0,0,.2)}
-.wa-big-btn:hover{background:#f0f0f0;transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,.25)}
-.wa-big-btn svg{width:22px;height:22px;flex-shrink:0}
-
-@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
-  </style>
 </head>
 <body>
 <nav class="navbar" id="nb">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="log.jpg" alt="Mamma Roti"/></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html" class="active">Contact</a></li>
-      <li><a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a>
+    </div>
     <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -151,11 +113,17 @@
     </a>
   </div>
 </section>
+<div style="background:var(--olive-dk);overflow:hidden;line-height:0;margin-top:-2px">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;display:block;width:100%">
+    <path d="M0,48 C240,0 480,48 720,24 C960,0 1200,48 1440,24 L1440,48 Z" fill="#374820"/>
+  </svg>
+</div>
+<footer>
 
 <footer>
   <div class="ft-grid">
     <div class="ft-brand"><img src="log.jpg" alt="Mamma Roti"/><p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p><div class="ft-social"><a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a><a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a><a href="tel:+96893360321">☎</a></div></div>
-    <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    
     <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
     <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">@mammaroti.om</a></p></div>
   </div>

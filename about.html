@@ -7,61 +7,21 @@
   <meta name="robots" content="index,follow"/>
   <link rel="canonical" href="https://mammarotioman.com/about.html"/>
   <link rel="stylesheet" href="style.css"/>
-  <style>
-/* STORY SECTION */
-.story{background:#fff;padding:6rem 2rem}
-.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
-.story-img-col{position:relative}
-.story-img-main{width:100%;aspect-ratio:3/4;border-radius:4px;overflow:hidden;position:relative}
-.story-img-main .fp{height:100%;background:linear-gradient(160deg,var(--olive-dk) 0%,#2a4010 100%);display:flex;align-items:flex-end;padding:2rem}
-.story-img-main .fp-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;color:rgba(255,255,255,.5);line-height:1.4}
-.story-img-accent{position:absolute;bottom:-24px;right:-24px;width:180px;height:180px;border-radius:4px;overflow:hidden;border:4px solid #fff;box-shadow:0 8px 32px rgba(0,0,0,.15)}
-.story-img-accent .fp{height:100%;background:linear-gradient(135deg,var(--red),#6a1212)}
-.story-badge{position:absolute;top:2rem;left:-20px;background:var(--red);color:#fff;padding:1rem 1.25rem;border-radius:4px;box-shadow:0 8px 24px rgba(139,26,26,.3)}
-.story-badge-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;line-height:1}
-.story-badge-txt{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.8;margin-top:2px}
-.story-text h2{margin-bottom:1.5rem}
-.story-text p{font-size:.97rem;line-height:1.85;color:var(--text-muted);margin-bottom:1.25rem}
-.story-text p strong{color:var(--text);font-weight:600}
-.story-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:3rem;border:1px solid rgba(0,0,0,.08);border-radius:4px;overflow:hidden}
-.stat-item{padding:1.25rem 1rem;text-align:center;border-right:1px solid rgba(0,0,0,.08)}
-.stat-item:last-child{border-right:none}
-.stat-n{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--olive)}
-.stat-l{font-size:.72rem;color:var(--text-muted);margin-top:3px;text-transform:uppercase;letter-spacing:.06em}
-
-/* QUOTE BREAK */
-.quote-break{background:var(--olive-dk);padding:5rem 2rem;text-align:center;position:relative;overflow:hidden}
-.quote-break::before{content:'"';position:absolute;top:-60px;left:50%;transform:translateX(-50%);font-family:'Playfair Display',serif;font-size:30rem;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
-.quote-break blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.6rem,3.5vw,2.4rem);color:#fff;max-width:700px;margin:0 auto;line-height:1.5;position:relative;z-index:1}
-.quote-break cite{display:block;font-family:'DM Sans',sans-serif;font-size:.8rem;font-style:normal;color:rgba(255,255,255,.4);margin-top:1.5rem;letter-spacing:.1em;text-transform:uppercase}
-
-/* VALUES */
-.values{background:var(--off-white);padding:5rem 2rem}
-.vals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
-.val-card{background:#fff;border-radius:4px;padding:2.5rem 2rem;border-top:3px solid transparent;transition:border-color .3s,box-shadow .3s;box-shadow:0 2px 12px rgba(0,0,0,.05)}
-.val-card:hover{border-top-color:var(--olive);box-shadow:0 8px 32px rgba(0,0,0,.1)}
-.val-card:nth-child(2){border-top-color:var(--red)}
-.val-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:rgba(0,0,0,.06);line-height:1;margin-bottom:.75rem}
-.val-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.6rem}
-.val-desc{font-size:.85rem;color:var(--text-muted);line-height:1.7}
-
-/* CTA */
-.about-cta{background:#fff;padding:5rem 2rem;text-align:center;border-top:1px solid rgba(0,0,0,.06)}
-.about-cta h3{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--text);margin-bottom:.75rem}
-.about-cta p{font-size:.95rem;color:var(--text-muted);max-width:480px;margin:0 auto 2rem;line-height:1.7}
-.about-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-
-@media(max-width:768px){.story-grid{grid-template-columns:1fr;gap:3rem}.story-img-accent{display:none}.story-badge{display:none}.vals-grid{grid-template-columns:1fr}.story-stats{grid-template-columns:1fr 1fr}.stat-item:last-child{border-top:1px solid rgba(0,0,0,.08);grid-column:span 2;border-right:none}}
-  </style>
 </head>
 <body>
 <nav class="navbar" id="nb">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo"><img src="log.jpg" alt="Mamma Roti"/></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html" class="active">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li>
-      <li><a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a>
+    </div>
     <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -156,11 +116,17 @@
     </div>
   </div>
 </section>
+<div style="background:var(--olive-dk);overflow:hidden;line-height:0;margin-top:-2px">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;display:block;width:100%">
+    <path d="M0,48 C240,0 480,48 720,24 C960,0 1200,48 1440,24 L1440,48 Z" fill="#374820"/>
+  </svg>
+</div>
+<footer>
 
 <footer>
   <div class="ft-grid">
     <div class="ft-brand"><img src="log.jpg" alt="Mamma Roti"/><p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p><div class="ft-social"><a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a><a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a><a href="tel:+96893360321">☎</a></div></div>
-    <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    
     <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
     <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">@mammaroti.om</a></p></div>
   </div>

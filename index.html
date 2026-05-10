@@ -9,92 +9,6 @@
   <link rel="canonical" href="https://mammarotioman.com/"/>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Mamma Roti","url":"https://mammarotioman.com","telephone":"+96893360321","address":{"@type":"PostalAddress","streetAddress":"Ghubrah","addressLocality":"Muscat","addressCountry":"OM"},"servesCuisine":["Indian","Street Food","Chinese"],"hasMenu":"https://mammarotioman.com/menu.html"}</script>
   <link rel="stylesheet" href="style.css"/>
-  <style>
-/* HERO */
-.hero{min-height:calc(100vh - 70px);background:#fff;display:flex;align-items:center;overflow:hidden;padding:3rem 2rem;position:relative}
-.hero::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a5e2a' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
-.hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;position:relative;z-index:2;width:100%}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(139,26,26,.07);border:1px solid rgba(139,26,26,.15);color:var(--red);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.32rem .85rem;border-radius:30px;margin-bottom:1.4rem}
-.hero-left h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:900;color:var(--olive-dk);line-height:1.03;margin-bottom:1rem}
-.hero-left h1 em{font-style:italic;color:var(--red);position:relative;display:inline-block}
-.hero-left h1 em::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:3px;background:var(--red);border-radius:2px}
-.hero-desc{font-size:.97rem;color:var(--text-muted);line-height:1.75;max-width:400px;margin-bottom:2rem}
-.hero-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
-/* Our Story button — exact match to reference */
-.btn-story{display:inline-flex;align-items:center;gap:10px;color:var(--text);font-size:.9rem;font-weight:600;text-decoration:none;transition:color .2s}
-.btn-story:hover{color:var(--olive)}
-.play-circle{width:38px;height:38px;border-radius:50%;background:var(--olive-dk);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s}
-.btn-story:hover .play-circle{background:var(--olive)}
-.play-circle svg{width:13px;height:13px;margin-left:3px}
-/* Hero right */
-.hero-right{display:flex;align-items:center;justify-content:center;position:relative}
-.hero-logo-wrap{position:relative;width:100%;max-width:480px}
-.hero-logo-img{width:100%;height:auto;display:block;mix-blend-mode:multiply}
-.fresh-badge{position:absolute;top:6%;right:2%;width:84px;height:84px;border-radius:50%;border:2px solid var(--olive);background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:.6rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--olive-dk);line-height:1.55;box-shadow:0 4px 16px rgba(74,94,42,.15)}
-/* Wave */
-.wave-down{background:#fff;overflow:hidden;line-height:0}
-.wave-down svg{display:block;width:100%}
-
-/* MENU HOME */
-.menu-home{background:#fff;padding:5rem 2rem}
-.menu-arrows{display:flex;align-items:center;justify-content:center;gap:.75rem;margin-bottom:.35rem}
-.menu-arrows-txt{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--text)}
-.deco{color:var(--red);font-size:1.2rem}
-.rule{width:60px;height:2px;background:var(--red);margin:.35rem auto .6rem}
-.ftabs{display:flex;justify-content:center;gap:.4rem;flex-wrap:wrap;margin-bottom:2.5rem}
-.ftab{padding:.4rem 1.1rem;border-radius:30px;font-size:.8rem;font-weight:600;cursor:pointer;border:1.5px solid rgba(74,94,42,.2);background:#fff;color:var(--text-muted);transition:all .2s;font-family:'DM Sans',sans-serif}
-.ftab:hover{border-color:var(--olive);color:var(--olive)}
-.ftab.active{background:var(--olive);color:#fff;border-color:var(--olive)}
-.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
-.mhcta{text-align:center;margin-top:2.5rem}
-
-/* BBQ BANNER */
-.bbq{background:var(--red);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
-.bbq-l{padding:4rem 3rem;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center}
-.bbq-ghost{position:absolute;left:-30px;top:50%;transform:translateY(-50%);opacity:.06;width:280px;pointer-events:none;mix-blend-mode:luminosity;filter:brightness(0) invert(1)}
-.bbq-l h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:900;color:#fff;line-height:1.15;margin-bottom:.7rem}
-.bbq-l p{font-size:.9rem;color:rgba(255,255,255,.7);margin-bottom:2rem;line-height:1.65;max-width:320px}
-.bbq-r{position:relative;min-height:380px;overflow:hidden}
-.bbq-food{width:100%;height:100%;min-height:380px;background:linear-gradient(135deg,rgba(0,0,0,.25),rgba(0,0,0,.4));display:flex;align-items:center;justify-content:center}
-.bbq-food-img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:block}
-.bbq-fbadge{position:absolute;top:50%;left:-36px;transform:translateY(-50%);width:72px;height:72px;background:#fff;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:.54rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--red);line-height:1.4;box-shadow:0 4px 16px rgba(0,0,0,.2);z-index:3}
-
-/* WHY */
-.why{background:var(--off-white);padding:5rem 2rem}
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-.why-photos{position:relative;height:420px}
-.wphoto{position:absolute;border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.14)}
-.wphoto img{width:100%;height:100%;object-fit:cover;display:block}
-.wp1{width:62%;height:280px;top:0;left:0}
-.wp2{width:50%;height:220px;bottom:0;right:0}
-.wfeats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
-.wfi{display:flex;align-items:flex-start;gap:.75rem}
-.wfi-icon{width:36px;height:36px;flex-shrink:0;margin-top:.1rem}
-.wfi h4{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.2rem}
-.wfi p{font-size:.8rem;color:var(--text-muted);line-height:1.55}
-
-/* CTA */
-.cta-s{background:var(--olive-dk);padding:5rem 2rem;text-align:center}
-.cta-s h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;color:#fff;margin-bottom:.7rem}
-.cta-s h2 em{font-style:italic;color:#c8963c}
-.cta-s p{font-size:.93rem;color:rgba(255,255,255,.5);margin-bottom:2rem}
-.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-
-/* CATERING */
-.cat-dl{background:#fff;padding:4rem 2rem}
-.cat-dl-box{max-width:1160px;margin:0 auto;background:var(--olive-dk);border-radius:20px;padding:2.5rem 3rem;display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap}
-.cat-icon{font-size:0;width:56px;height:56px;flex-shrink:0}
-.cat-icon svg{width:56px;height:56px}
-.cat-txt{flex:1;min-width:220px}
-.cat-txt h3{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:#fff;margin-bottom:.4rem}
-.cat-txt p{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.7}
-.cat-acts{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;flex-shrink:0}
-
-@media(max-width:1024px){.mgrid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.hero-inner{grid-template-columns:1fr;gap:2rem}.hero-right{order:-1}.hero-logo-wrap{max-width:280px;margin:0 auto}.bbq{grid-template-columns:1fr}.bbq-r{min-height:220px}.bbq-fbadge{display:none}.why-grid{grid-template-columns:1fr}.why-photos{height:260px}.cat-dl-box{flex-direction:column;gap:1.5rem;padding:2rem;text-align:center}.cat-acts{justify-content:center}}
-@media(max-width:580px){.mgrid{grid-template-columns:1fr 1fr}.wfeats{grid-template-columns:1fr}}
-@media(max-width:400px){.mgrid{grid-template-columns:1fr}}
-  </style>
 </head>
 <body>
 <nav class="navbar" id="nb">
@@ -106,8 +20,10 @@
       <li><a href="about.html">About</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a></li>
     </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a>
+    </div>
     <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -216,10 +132,12 @@
     <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="btn btn-white" target="_blank" rel="noopener">Order Now →</a>
   </div>
   <div class="bbq-r">
-    <div class="bbq-food food-ph-starter" style="flex-direction:column;gap:.5rem">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8v8"/></svg>
-      <span style="color:rgba(255,255,255,.25);font-size:.75rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Food photo coming soon</span>
-    </div>
+    <img
+      src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80"
+      alt="Grilled Indian food at Mamma Roti"
+      class="bbq-food-img"
+      loading="lazy"
+    />
     <div class="bbq-fbadge">100%<br/>FRESH</div>
   </div>
 </div>
@@ -292,22 +210,33 @@
     </div>
   </div>
 </section>
-
+<div style="background:var(--olive-dk);overflow:hidden;line-height:0;margin-top:-2px">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;display:block;width:100%">
+    <path d="M0,48 C240,0 480,48 720,24 C960,0 1200,48 1440,24 L1440,48 Z" fill="#374820"/>
+  </svg>
+</div>
+<footer>
 <footer>
   <div class="ft-grid">
     <div class="ft-brand">
       <img src="log.jpg" alt="Mamma Roti"/>
       <p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p>
       <div class="ft-social">
-        <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">IG</a>
-        <a href="https://wa.me/96893360321" target="_blank" rel="noopener">WA</a>
-        <a href="tel:+96893360321">☎</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" title="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener" title="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg>
+        </a>
       </div>
-    </div>
-    <div class="ft-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    
     <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
     <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">@mammaroti.om</a></p></div>
+    <div class="ft-col ft-mood">
+      <div class="mood-text">Good Food<br/>Good Mood</div>
+    </div>
   </div>
+  
   <div class="ft-bottom"><p>© 2026 Mamma Roti. All rights reserved. Good food made with love.</p><p>Built by <a href="https://foodfeedstudio.in">Food Feed Studio</a></p></div>
 </footer>
 
