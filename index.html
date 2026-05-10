@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Mamma Roti — Good Food, Made with Love | Indian Cloud Kitchen Muscat</title>
-  <meta name="description" content="Mamma Roti — Authentic Indian food delivery in Muscat, Oman. Cloud kitchen serving chaats, biryanis, curries and catering. Order on WhatsApp."/>
-  <meta name="keywords" content="Indian food Muscat, cloud kitchen Muscat, Indian delivery Oman, catering Muscat, Mamma Roti, chaat Muscat, biryani Muscat"/>
-  <meta name="robots" content="index,follow"/>
-  <link rel="canonical" href="https://mammarotioman.com/"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Mamma Roti","url":"https://mammarotioman.com","telephone":"+96893360321","address":{"@type":"PostalAddress","streetAddress":"Ghubrah","addressLocality":"Muscat","addressCountry":"OM"},"servesCuisine":["Indian","Street Food","Chinese"],"hasMenu":"https://mammarotioman.com/menu.html"}</script>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Mamma Roti — Authentic Indian Food Delivery in Muscat, Oman | Cloud Kitchen</title>
+<meta name="description" content="Mamma Roti — Authentic Indian cloud kitchen in Ghubrah, Muscat. Fresh chaats, biryanis, curries & catering. Order on WhatsApp +968 9336 0321. Delivery across Muscat in 1 hour."/>
+<meta name="keywords" content="Indian food Muscat, cloud kitchen Muscat, Indian delivery Oman, catering Muscat, Mamma Roti, chaat Muscat, biryani Muscat, butter chicken Muscat, Indian restaurant Ghubrah, Oman Indian food"/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<meta name="author" content="Mamma Roti"/>
+<meta name="geo.region" content="OM-MA"/>
+<meta name="geo.placename" content="Muscat"/>
+<meta name="geo.position" content="23.6070;58.5698"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant"/>
+<meta property="og:title" content="Mamma Roti — Authentic Indian Food Delivery in Muscat"/>
+<meta property="og:description" content="Good food, made with love. Authentic Indian cloud kitchen serving Muscat. Order on WhatsApp."/>
+<meta property="og:url" content="https://mammarotioman.com/"/>
+<meta property="og:site_name" content="Mamma Roti"/>
+<meta property="og:image" content="https://mammarotioman.com/og-image.jpg"/>
+<meta property="og:locale" content="en_OM"/>
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Mamma Roti — Indian Food Delivery Muscat"/>
+<meta name="twitter:description" content="Authentic Indian cloud kitchen in Muscat. Fresh, made with love."/>
+
+<link rel="canonical" href="https://mammarotioman.com/"/>
+<link rel="icon" type="image/png" href="favicon.png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+
+<!-- Schema.org Restaurant -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Mamma Roti",
+  "image": "https://mammarotioman.com/og-image.jpg",
+  "@id": "https://mammarotioman.com",
+  "url": "https://mammarotioman.com",
+  "telephone": "+96893360321",
+  "priceRange": "$$",
+  "servesCuisine": ["Indian", "Street Food", "Indo-Chinese", "Mughlai"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ghubrah",
+    "addressLocality": "Muscat",
+    "addressRegion": "Muscat",
+    "postalCode": "133",
+    "addressCountry": "OM"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 23.6070,
+    "longitude": 58.5698
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:30", "closes": "14:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "17:00", "closes": "23:00"}
+  ],
+  "hasMenu": "https://mammarotioman.com/menu.html",
+  "acceptsReservations": false,
+  "sameAs": [
+    "https://instagram.com/mammaroti.om",
+    "https://wa.me/96893360321"
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
+<!-- NAV -->
 <nav class="navbar" id="nb">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Mamma Roti"/></a>
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Mamma Roti — Authentic Indian Cloud Kitchen Muscat"/></a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
@@ -24,21 +86,22 @@
     <div class="nav-cta">
       <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="nav-order" target="_blank" rel="noopener">Order Now</a>
     </div>
-    <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="nav-mobile" id="mobnav">
-  <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
   <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" target="_blank" rel="noopener">Order Now →</a>
 </div>
 
-<div class="del-strip page-top">🎉 40% OFF on orders above 5 OMR <span class="sep">|</span> 🚗 FREE delivery on orders above 10 OMR <span class="sep">|</span> ~1 hour · from 1.200 OMR</div>
-
 <!-- HERO -->
-<section class="hero">
+<section class="hero page-top">
   <div class="hero-inner">
     <div class="hero-left a1">
-      <div class="hero-badge">📍 Ghubrah, Muscat · Delivery Available</div>
       <h1>Good Food.<br/>Made with <em>Love.</em></h1>
       <p class="hero-desc">At Mamma Roti, every meal is made fresh with love and the finest ingredients. From our kitchen to your heart.</p>
       <div class="hero-actions">
@@ -54,125 +117,160 @@
     <div class="hero-right a2">
       <div class="hero-logo-wrap">
         <img src="logo.png" alt="Mamma Roti — Made with Love" class="hero-logo-img"/>
-        <div class="fresh-badge">FRESH<br/>TASTY<br/>EVERY<br/>DAY</div>
+        <div class="fresh-badge">
+          <span>Fresh<br/>Tasty<br/>Everyday</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="wave-down" style="background:var(--off-white)">
-  <svg viewBox="0 0 1440 52" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:52px"><path d="M0,26 C240,52 480,0 720,26 C960,52 1200,0 1440,26 L1440,52 L0,52 Z" fill="#ffffff"/></svg>
-</div>
+<div class="scalloped-edge"></div>
 
 <!-- MENU PREVIEW -->
 <section class="menu-home">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:2.5rem">
-      <div class="menu-arrows">
-        <span class="deco">➤</span>
-        <span class="menu-arrows-txt">OUR MENU</span>
-        <span class="deco" style="transform:scaleX(-1);display:inline-block">➤</span>
-      </div>
-      <div class="rule"></div>
-      <p style="font-size:.88rem;color:var(--text-muted)">Fresh · Authentic · Made Daily</p>
+  <div style="text-align:center">
+    <div class="menu-arrows">
+      <span class="deco">➤</span>
+      <span class="menu-arrows-txt">Our Menu</span>
+      <span class="deco deco-l">➤</span>
     </div>
-    <div class="ftabs">
-      <button class="ftab active" data-cat="all">All</button>
-      <button class="ftab" data-cat="chaat">Chaat</button>
-      <button class="ftab" data-cat="indian">Indian Mains</button>
-      <button class="ftab" data-cat="chinese">Chinese</button>
-      <button class="ftab" data-cat="starters">Starters</button>
-      <button class="ftab" data-cat="breads">Breads</button>
-      <button class="ftab" data-cat="sweets">Sweets</button>
-    </div>
-    <div class="mgrid" id="mgrid">
-      <div class="mcard" data-cat="chaat">
-        <div class="mcard-img food-ph food-ph-chaat"><span>Pani Puri</span></div>
-        <div class="mcard-body"><div class="mcard-cat">Chaat Corner</div><div class="mcard-name">Pani Puri</div><div class="mcard-desc">Crispy puris with tangy tamarind water and spiced potato</div><div class="mcard-price">0.500 baiza</div></div>
+    <div class="rule"></div>
+  </div>
+
+  <div class="ftabs">
+    <button class="ftab active" data-cat="all">All</button>
+    <button class="ftab" data-cat="chaat">Chaat</button>
+    <button class="ftab" data-cat="indian">Indian Mains</button>
+    <button class="ftab" data-cat="chinese">Chinese</button>
+    <button class="ftab" data-cat="sweets">Sweets</button>
+  </div>
+
+  <div class="mgrid" id="mgrid">
+    <div class="mcard" data-cat="chaat">
+      <div class="mcard-img-wrap">
+        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=600&q=80" alt="Pani Puri" class="mcard-img" loading="lazy"/>
       </div>
-      <div class="mcard" data-cat="chaat">
-        <div class="mcard-img food-ph food-ph-chaat"><span>Papdi Chaat</span></div>
-        <div class="mcard-body"><div class="mcard-cat">Chaat Corner</div><div class="mcard-name">Papdi Chaat</div><div class="mcard-desc">Crunchy papdi with yoghurt, chutneys and fresh sev</div><div class="mcard-price">0.800 baiza</div></div>
-      </div>
-      <div class="mcard" data-cat="indian">
-        <div class="mcard-img food-ph food-ph-indian"><span>Butter Chicken</span></div>
-        <div class="mcard-body"><div class="mcard-cat">Indian Main</div><div class="mcard-name">Butter Chicken</div><div class="mcard-desc">Rich creamy tomato gravy with tender chicken pieces</div><div class="mcard-price">1.500 / 2.600 OMR</div></div>
-      </div>
-      <div class="mcard" data-cat="indian">
-        <div class="mcard-img food-ph food-ph-indian"><span>Palak Paneer</span></div>
-        <div class="mcard-body"><div class="mcard-cat">Indian Main</div><div class="mcard-name">Palak Paneer</div><div class="mcard-desc">Fresh cottage cheese in a silky spiced spinach gravy</div><div class="mcard-price">1.400 / 2.400 OMR</div></div>
-      </div>
-      <div class="mcard" data-cat="chinese">
-        <div class="mcard-img food-ph food-ph-chinese"><span>Hakka Noodles</span></div>
-        <div class="mcard-body"><div class="mcard-cat">Chinese</div><div class="mcard-name">Chicken Hakka Noodles</div><div class="mcard-desc">Wok-tossed noodles with chicken and Indo-Chinese sauce</div><div class="mcard-price">2.000 / 2.400 OMR</div></div>
-      </div>
-      <div class="mcard" data-cat="starters">
-        <div class="mcard-img food-ph food-ph-starter"><span>Chicken 65</span></div>
-        <div class="mcard-body"><div class="mcard-cat">Starters</div><div class="mcard-name">Chicken 65</div><div class="mcard-desc">Crispy fried chicken with curry leaves and green chillies</div><div class="mcard-price">1.500 / 2.400 OMR</div></div>
-      </div>
-      <div class="mcard" data-cat="breads">
-        <div class="mcard-img food-ph food-ph-bread"><span>Lacha Paratha</span></div>
-        <div class="mcard-body"><div class="mcard-cat">Breads & Rotis</div><div class="mcard-name">Lacha Paratha</div><div class="mcard-desc">Flaky layered whole wheat paratha made fresh to order</div><div class="mcard-price">0.300 baiza</div></div>
-      </div>
-      <div class="mcard" data-cat="sweets">
-        <div class="mcard-img food-ph food-ph-sweet"><span>Gulab Jamun</span></div>
-        <div class="mcard-body"><div class="mcard-cat">Sweets</div><div class="mcard-name">Gulab Jamun</div><div class="mcard-desc">Soft milk dumplings soaked in rose-flavoured sugar syrup</div><div class="mcard-price">0.300 baiza</div></div>
+      <div class="mcard-body">
+        <div class="mcard-name">Pani Puri</div>
+        <div class="mcard-desc">Crispy puris with tangy tamarind water and spiced potato</div>
+        <div class="mcard-price">0.500 OMR</div>
       </div>
     </div>
-    <div class="mhcta"><a href="menu.html" class="btn btn-olive">View Full Menu →</a></div>
+
+    <div class="mcard" data-cat="indian">
+      <div class="mcard-img-wrap">
+        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Butter Chicken" class="mcard-img" loading="lazy"/>
+      </div>
+      <div class="mcard-body">
+        <div class="mcard-name">Butter Chicken</div>
+        <div class="mcard-desc">Rich creamy tomato gravy with tender chicken pieces</div>
+        <div class="mcard-price">2.600 OMR</div>
+      </div>
+    </div>
+
+    <div class="mcard" data-cat="chinese">
+      <div class="mcard-img-wrap">
+        <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=600&q=80" alt="Chicken Hakka Noodles" class="mcard-img" loading="lazy"/>
+      </div>
+      <div class="mcard-body">
+        <div class="mcard-name">Hakka Noodles</div>
+        <div class="mcard-desc">Wok-tossed noodles with chicken and Indo-Chinese sauce</div>
+        <div class="mcard-price">2.400 OMR</div>
+      </div>
+    </div>
+
+    <div class="mcard" data-cat="sweets">
+      <div class="mcard-img-wrap">
+        <img src="https://images.unsplash.com/photo-1601303516534-bf94b62a8c95?w=600&q=80" alt="Gulab Jamun" class="mcard-img" loading="lazy"/>
+      </div>
+      <div class="mcard-body">
+        <div class="mcard-name">Gulab Jamun</div>
+        <div class="mcard-desc">Soft milk dumplings soaked in rose-flavoured sugar syrup</div>
+        <div class="mcard-price">0.300 OMR</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mhcta">
+    <a href="menu.html" class="btn btn-olive">View Full Menu →</a>
   </div>
 </section>
 
 <!-- BBQ BANNER -->
-<div class="bbq">
-  <div class="bbq-l">
-    <img src="logo.png" alt="" class="bbq-ghost"/>
-    <h2>From Street<br/>to Soul.<br/>Made for You.</h2>
-    <p>Bold flavours. Fresh ingredients. Delivered with love — straight from Mamma's kitchen to your door in Muscat.</p>
-    <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="btn btn-white" target="_blank" rel="noopener">Order Now →</a>
-  </div>
-  <div class="bbq-r">
-    <img
-      src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80"
-      alt="Grilled Indian food at Mamma Roti"
-      class="bbq-food-img"
-      loading="lazy"
-    />
-    <div class="bbq-fbadge">100%<br/>FRESH</div>
+<div class="bbq-wrap">
+  <div class="bbq">
+    <div class="bbq-l">
+      <img src="logo.png" alt="" class="bbq-ghost" aria-hidden="true"/>
+      <h2>Grilled to<br/>Perfection.<br/>Made for You.</h2>
+      <p>Bold flavours. Fresh ingredients. Unforgettable meals.</p>
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="btn btn-white" target="_blank" rel="noopener">Order Now →</a>
+    </div>
+    <div class="bbq-r">
+      <img
+        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80"
+        alt="Grilled chicken at Mamma Roti"
+        class="bbq-food-img"
+        loading="lazy"
+      />
+      <div class="bbq-fbadge">
+        <span>100%<br/>Fresh</span>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- WHY -->
 <section class="why">
-  <div class="container">
-    <div class="why-grid">
-      <div class="why-photos">
-        <div class="wphoto wp1">
-          <div class="food-ph food-ph-indian" style="height:100%"><span>Indian Mains</span></div>
-        </div>
-        <div class="wphoto wp2">
-          <div class="food-ph food-ph-chaat" style="height:100%"><span>Chaat Corner</span></div>
-        </div>
+  <div class="why-inner">
+    <div class="why-img-wrap">
+      <div class="why-bubble">
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=900&q=80" alt="Fresh Indian food spread at Mamma Roti" class="why-img" loading="lazy"/>
       </div>
-      <div>
-        <div class="eyebrow">Why Us</div>
-        <h2 class="sec-title">Why Choose<br/><em>Mamma Roti?</em></h2>
-        <div class="wfeats">
-          <div class="wfi">
-            <svg class="wfi-icon" viewBox="0 0 36 36" fill="none"><path d="M18 31s-13-8.5-13-17a8 8 0 0116 0 8 8 0 0116 0c0 8.5-13 17-13 17z" stroke="var(--red)" stroke-width="2" fill="rgba(139,26,26,.08)"/></svg>
-            <div><h4>Made with Love</h4><p>Every meal prepared with genuine care and passion</p></div>
+    </div>
+    <div class="why-text">
+      <h2>Why Choose<br/><em>Mamma Roti?</em></h2>
+      <div class="why-divider"></div>
+      <div class="wfeats">
+        <div class="wfi">
+          <svg class="wfi-icon" viewBox="0 0 36 36" fill="none">
+            <path d="M18 31s-12-7-12-15.5C6 10.8 9.8 7 14.5 7c2 0 3.7 1 5 2.5 1.3-1.5 3-2.5 5-2.5 4.7 0 8.5 3.8 8.5 8.5C33 24 18 31 18 31z" stroke="#8b1a1a" stroke-width="2" fill="none"/>
+          </svg>
+          <div>
+            <h4>Made with Love</h4>
+            <p>Every meal is prepared with care and passion.</p>
           </div>
-          <div class="wfi">
-            <svg class="wfi-icon" viewBox="0 0 36 36" fill="none"><path d="M18 4c0 0-2 4-2 8 0 3 2 5 2 5s2-2 2-5c0-4-2-8-2-8z" stroke="var(--red)" stroke-width="2" fill="rgba(139,26,26,.08)"/><path d="M10 14c0 0-3 4-3 9a11 11 0 0022 0c0-5-3-9-3-9" stroke="var(--red)" stroke-width="2"/></svg>
-            <div><h4>Grilled to Perfection</h4><p>Expertly crafted for authentic Indian taste</p></div>
+        </div>
+        <div class="wfi">
+          <svg class="wfi-icon" viewBox="0 0 36 36" fill="none">
+            <path d="M18 4 C 16 8, 14 11, 14 15 C 14 17, 15 18.5, 16 19 C 16 17, 17 15, 18 14 C 18 16, 17 18, 17 20 C 17 22, 18 23, 19 23 C 19 21, 20 19, 20 17 C 21 19, 21 21, 21 23 C 23 22, 25 19, 25 15 C 25 11, 22 8, 18 4 Z" stroke="#8b1a1a" stroke-width="1.8" fill="none"/>
+            <path d="M11 17 C 9 19, 7 22, 7 25 C 7 30, 11 33, 18 33 C 25 33, 29 30, 29 25 C 29 22, 27 19, 25 17" stroke="#8b1a1a" stroke-width="1.8" fill="none"/>
+          </svg>
+          <div>
+            <h4>Grilled to Perfection</h4>
+            <p>Expertly grilled for that perfect taste.</p>
           </div>
-          <div class="wfi">
-            <svg class="wfi-icon" viewBox="0 0 36 36" fill="none"><ellipse cx="18" cy="18" rx="12" ry="7" stroke="var(--olive)" stroke-width="2" fill="rgba(74,94,42,.08)"/><path d="M18 11V7M14 13l-3-3M22 13l3-3" stroke="var(--olive)" stroke-width="2" stroke-linecap="round"/></svg>
-            <div><h4>Fresh Ingredients</h4><p>Only the finest ingredients, sourced fresh daily</p></div>
+        </div>
+        <div class="wfi">
+          <svg class="wfi-icon" viewBox="0 0 36 36" fill="none">
+            <path d="M6 24 C 6 14, 14 6, 26 6 C 28 6, 30 6, 30 6 C 30 6, 30 8, 30 10 C 30 22, 22 30, 12 30 C 9 30, 6 28, 6 24 Z" stroke="#4a5e2a" stroke-width="2" fill="none"/>
+            <path d="M28 8 L 12 26" stroke="#4a5e2a" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <h4>Fresh Ingredients</h4>
+            <p>We use only the freshest ingredients daily.</p>
           </div>
-          <div class="wfi">
-            <svg class="wfi-icon" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="13" stroke="var(--olive)" stroke-width="2" fill="rgba(74,94,42,.08)"/><path d="M13 21s1.5 3 5 3 5-3 5-3" stroke="var(--olive)" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="16" r="1.5" fill="var(--olive)"/><circle cx="22" cy="16" r="1.5" fill="var(--olive)"/></svg>
-            <div><h4>Great Vibes</h4><p>Good food, good mood — always a great experience</p></div>
+        </div>
+        <div class="wfi">
+          <svg class="wfi-icon" viewBox="0 0 36 36" fill="none">
+            <circle cx="18" cy="18" r="13" stroke="#4a5e2a" stroke-width="2" fill="none"/>
+            <path d="M12 21 Q 18 26, 24 21" stroke="#4a5e2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <circle cx="13" cy="15" r="1.5" fill="#4a5e2a"/>
+            <circle cx="23" cy="15" r="1.5" fill="#4a5e2a"/>
+          </svg>
+          <div>
+            <h4>Great Vibes</h4>
+            <p>Good food, good music, good vibes always.</p>
           </div>
         </div>
       </div>
@@ -182,62 +280,70 @@
 
 <!-- CATERING DL -->
 <section class="cat-dl">
-  <div class="container">
-    <div class="cat-dl-box">
-      <div class="cat-icon">
-        <svg viewBox="0 0 56 56" fill="none"><rect width="56" height="56" rx="12" fill="rgba(255,255,255,.1)"/><path d="M14 38h28M20 28h16M24 20h8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="M28 44V28" stroke="#c8963c" stroke-width="2.5" stroke-linecap="round"/><path d="M22 34l6 6 6-6" stroke="#c8963c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="cat-txt">
-        <h3>Planning an Event or Party?</h3>
-        <p>Customised catering for home gatherings, birthdays and celebrations. Live stations, curated menus, service staff. Standard party menu from 4.5 OMR per person.</p>
-      </div>
-      <div class="cat-acts">
-        <a href="mmom.pdf" class="btn btn-white" download>⬇ Download Catering Menu</a>
-        <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27m%20interested%20in%20catering." class="btn btn-outline-white" target="_blank" rel="noopener">Chat with Us</a>
-      </div>
+  <div class="cat-dl-box">
+    <div class="cat-icon">
+      <svg viewBox="0 0 56 56" fill="none">
+        <rect width="56" height="56" rx="12" fill="rgba(255,255,255,.1)"/>
+        <path d="M14 38h28M20 28h16M24 20h8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M28 44V28" stroke="#c8963c" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M22 34l6 6 6-6" stroke="#c8963c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="cat-txt">
+      <h3>Planning an Event or Party?</h3>
+      <p>Customised catering for home gatherings, birthdays and celebrations. Live stations, curated menus, service staff. Standard party menu from 4.500 OMR per person.</p>
+    </div>
+    <div class="cat-acts">
+      <a href="Catering-ordering.pdf" class="btn btn-white" download>↓ Catering Menu</a>
+      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27m%20interested%20in%20catering." class="btn btn-outline-white" target="_blank" rel="noopener">Chat with Us</a>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-s">
-  <div class="container">
-    <h2>Ready to Taste <em>Perfection?</em></h2>
-    <p>Order now and experience authentic Indian flavours crafted with love — delivered across Muscat.</p>
-    <div class="cta-btns">
-      <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti%2C%20I%27d%20like%20to%20order!" class="btn btn-white" target="_blank" rel="noopener">Order on WhatsApp</a>
-      <a href="contact.html" class="btn btn-outline-white">Get in Touch</a>
-    </div>
-  </div>
-</section>
-<div style="background:var(--olive-dk);overflow:hidden;line-height:0;margin-top:-2px">
-  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:48px;display:block;width:100%">
-    <path d="M0,48 C240,0 480,48 720,24 C960,0 1200,48 1440,24 L1440,48 Z" fill="#374820"/>
-  </svg>
-</div>
-<footer>
+<!-- FOOTER -->
 <footer>
   <div class="ft-grid">
     <div class="ft-brand">
       <img src="logo.png" alt="Mamma Roti"/>
-      <p>Good food, made with love. Cloud kitchen serving authentic Indian flavours across Muscat, Oman.</p>
+      <p>Mamma Roti is your go-to spot for delicious roti, grills and good vibes. Made with love, served with pride.</p>
       <div class="ft-social">
-        <a href="https://facebook.com" target="_blank" rel="noopener" title="Facebook">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        <a href="https://facebook.com/mammaroti" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/></svg>
         </a>
-        <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener" title="Instagram">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg>
+        <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://tiktok.com/@mammaroti" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005.8 20.1a6.34 6.34 0 0010.86-4.43V8.69a8.16 8.16 0 004.77 1.52V6.81a4.85 4.85 0 01-1.84-.12z"/></svg>
         </a>
       </div>
-    
-    <div class="ft-col"><h4>Hours</h4><p>Monday – Sunday</p><p>☀️ 9:30 AM – 2:30 PM</p><p>🌙 5:00 PM – 11:00 PM</p></div>
-    <div class="ft-col"><h4>Contact Us</h4><p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p><p>📍 Ghubrah, Muscat, Oman</p><p>📸 <a href="https://instagram.com/mammaroti.om" target="_blank" rel="noopener">@mammaroti.om</a></p></div>
-    <div class="ft-col ft-mood">
-      <div class="mood-text">Good Food<br/>Good Mood</div>
+    </div>
+
+    <div class="ft-col">
+      <h4>Hours</h4>
+      <p>Monday – Sunday</p>
+      <p>☀ 9:30 AM – 2:30 PM</p>
+      <p>☾ 5:00 PM – 11:00 PM</p>
+      <div class="ft-hours-divider"></div>
+      <p class="ft-thanks">Thank you for supporting<br/>local & choosing love. <span class="ft-heart">♥</span></p>
+    </div>
+
+    <div class="ft-col">
+      <h4>Contact Us</h4>
+      <p>📞 <a href="tel:+96893360321">+968 9336 0321</a></p>
+      <p>✉ <a href="mailto:contact@mammarotioman.com">contact@mammarotioman.com</a></p>
+      <p>📍 Ghubrah, Muscat, Oman</p>
+    </div>
+
+    <div class="ft-col">
+      <div class="ft-mood-text">Good Food<br/>Good Mood</div>
+      <span class="ft-mood-coffee">☕</span>
     </div>
   </div>
-  
-  <div class="ft-bottom"><p>© 2026 Mamma Roti. All rights reserved. Good food made with love.</p><p>Built by <a href="https://foodfeedstudio.in">Food Feed Studio</a></p></div>
+
+  <div class="ft-bottom">
+    <p>© 2025 Mamma Roti. All rights reserved. · Built by <a href="https://foodfeedstudio.in" target="_blank" rel="noopener">Food Feed Studio</a></p>
+  </div>
 </footer>
 
 <a href="https://wa.me/96893360321?text=Hi%20Mamma%20Roti!" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -254,4 +360,5 @@ document.querySelectorAll('.ftab').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('#mgrid .mcard').forEach(c=>c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none');
 }));
 </script>
-</body></html>
+</body>
+</html>

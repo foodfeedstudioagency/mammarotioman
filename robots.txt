@@ -1,0 +1,37 @@
+# robots.txt for Mamma Roti — https://mammarotioman.com
+# Last updated: 2025
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI scrapers — allowed (we want to be discoverable)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://mammarotioman.com/sitemap.xml
+
+# Crawl delay for general bots (seconds)
+Crawl-delay: 1
