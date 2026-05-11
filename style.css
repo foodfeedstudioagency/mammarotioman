@@ -1965,3 +1965,13 @@ section .bbq .bbq-l {
   gap: 1rem !important;
   min-height: 100% !important;
 }
+/* Fix menu section scroll - account for sticky nav + filter bar */
+.msec {
+  scroll-margin-top: 160px;
+}
+
+@media(max-width:768px) {
+  .msec {
+    scroll-margin-top: 130px;
+  }
+}
