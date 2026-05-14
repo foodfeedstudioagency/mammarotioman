@@ -104,6 +104,7 @@
 <section class="hero page-top">
   <div class="hero-inner">
     <div class="hero-left a1">
+      <span class="hero-eyebrow">Mamma Roti · Authentic Indian Kitchen</span>
       <h1>Cloud kitchen serving Muscat in under <br/> <em>1 hour</em></h1>
       <p class="hero-desc">Mumbai street food, Punjabi classics, and Hyderabadi biryani — slow-cooked, hand-rolled, and delivered fresh across Muscat.</p>
       <div class="hero-actions">
@@ -118,7 +119,17 @@
     </div>
     <div class="hero-right">
       <div class="hero-food-wrap">
-        <img src="https://images.unsplash.com/photo-1728910107534-e04e261768ae?w=900&q=85&auto=format&fit=crop" alt="Mamma Roti signature dish" class="hero-food-img" loading="eager"/>      </div>
+        <div class="hero-carousel" id="heroCarousel">
+          <img src="images/butter-chicken-hero.png" alt="Butter Chicken — Mamma Roti" class="hero-slide active" loading="eager"/>
+          <img src="images/biryani-hero.png" alt="Chicken Biryani — Mamma Roti" class="hero-slide" loading="eager"/>
+          <img src="images/chaat-hero.png" alt="Papdi Chaat — Mamma Roti" class="hero-slide" loading="eager"/>
+        </div>
+        <div class="hero-dots" id="heroDots">
+          <button class="hero-dot active" data-slide="0" aria-label="Show slide 1"></button>
+          <button class="hero-dot" data-slide="1" aria-label="Show slide 2"></button>
+          <button class="hero-dot" data-slide="2" aria-label="Show slide 3"></button>
+        </div>
+      </div>
       <div class="delivery-pill" aria-label="Delivered in under 1 hour across Muscat">
         <div class="delivery-pill-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -127,7 +138,6 @@
           <span>Delivered in</span><strong>Under 1 Hour</strong>
         </div>
       </div>
-    </div>
     </div>
   </div>
 </section>
@@ -670,6 +680,39 @@ document.querySelectorAll('.ftab').forEach(b=>b.addEventListener('click',()=>{
   const cat=b.dataset.cat;
   document.querySelectorAll('#mgrid .mcard').forEach(c=>c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none');
 }));
+// Hero carousel
+(function(){
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  if(!slides.length) return;
+  let current = 0;
+  let timer;
+
+  function goTo(n){
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = n;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+  function next(){
+    goTo((current + 1) % slides.length);
+  }
+  function startTimer(){
+    timer = setInterval(next, 4000);
+  }
+  function resetTimer(){
+    clearInterval(timer);
+    startTimer();
+  }
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      goTo(i);
+      resetTimer();
+    });
+  });
+  startTimer();
+})();
 </script>
 </body>
 </html>
