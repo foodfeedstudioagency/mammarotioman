@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=DM+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,600&family=Caveat:wght@500;700&display=swap');
 
 /* ═══════════════════════════
@@ -3516,5 +3520,179 @@ footer {
     border-left-width: 15px;
     border-top-width: 9px;
     border-bottom-width: 9px;
+  }
+}
+
+/* Gallery — remove overlay labels, add subtle hover zoom */
+.gcell {
+  cursor: zoom-in;
+  position: relative;
+  overflow: hidden;
+}
+.gcell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease;
+}
+.gcell:hover img {
+  transform: scale(1.06);
+}
+/* Hide any existing overlay just in case */
+.gcell-overlay {
+  display: none !important;
+}
+/* Filter bar — hide if it exists */
+.gfilter {
+  display: none !important;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 20, 10, .96);
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+.lightbox.open {
+  display: flex;
+  opacity: 1;
+}
+.lb-img {
+  max-width: 92vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.5);
+}
+.lb-close,
+.lb-prev,
+.lb-next {
+  position: absolute;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.25);
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, sans-serif;
+  transition: background .2s, transform .2s;
+}
+.lb-close:hover,
+.lb-prev:hover,
+.lb-next:hover {
+  background: rgba(255,255,255,.2);
+  transform: scale(1.08);
+}
+.lb-close {
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
+}
+.lb-prev { left: 1.5rem; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 1.5rem; top: 50%; transform: translateY(-50%); }
+.lb-prev:hover { transform: translateY(-50%) scale(1.08); }
+.lb-next:hover { transform: translateY(-50%) scale(1.08); }
+.lb-counter {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,.7);
+  font-family: 'DM Sans', sans-serif;
+  font-size: .85rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .lb-close,
+  .lb-prev,
+  .lb-next {
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+  }
+  .lb-close { top: 1rem; right: 1rem; }
+  .lb-prev { left: .5rem; }
+  .lb-next { right: .5rem; }
+  .gcell:hover img {
+    transform: none; /* no hover zoom on mobile */
+  }
+}
+
+#menu-items {
+  scroll-margin-top: 170px;  /* nav 88px + filter bar ~50px + breathing room */
+}
+#menu,
+#gallery,
+#story,
+#catering,
+#contact {
+  scroll-margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+  #menu-items {
+    scroll-margin-top: 140px;  /* mobile nav 60px + filter bar ~40px + breathing */
+  }
+  #menu,
+  #gallery,
+  #story,
+  #catering,
+  #contact {
+    scroll-margin-top: 90px;
+  }
+}
+/* Footer — restore Good Food Good Mood column width */
+footer .ft-mood-col {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+footer .ft-mood-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1.05;
+  color: #fff;
+  white-space: nowrap;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+footer .ft-mood-coffee {
+  display: block;
+  width: 78px;
+  height: 60px;
+  color: rgba(255,255,255,.85);
+  margin-top: .5rem;
+}
+footer .ft-mood-coffee svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  footer .ft-mood-text {
+    font-size: 2.5rem;
+    white-space: normal;
+  }
+  footer .ft-mood-col {
+    align-items: center;
+    text-align: center;
   }
 }
