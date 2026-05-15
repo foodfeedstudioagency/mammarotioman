@@ -71,16 +71,33 @@
       <p>A glimpse of Mamma Roti catering in action</p>
     </div>
     <div class="cat-gallery-grid">
-      <div class="cat-photo-tile"><img src="cat1.jpg" alt="Mamma Roti catering setup" loading="lazy"/></div>
-      <div class="cat-photo-tile"><img src="cat2.jpg" alt="Live chaat station" loading="lazy"/></div>
-      <div class="cat-photo-tile"><img src="cat3.jpg" alt="Catering spread" loading="lazy"/></div>
-      <div class="cat-photo-tile"><img src="cat4.jpg" alt="Event catering" loading="lazy"/></div>
-      <div class="cat-photo-tile"><img src="cat5.jpg" alt="Plated catering" loading="lazy"/></div>
-      <div class="cat-photo-tile"><img src="cat6.jpg" alt="Live station service" loading="lazy"/></div>
-      <div class="cat-photo-tile"><img src="cat7.jpg" alt="Catering plating" loading="lazy"/></div>
-      <div class="cat-photo-tile"><img src="cat8.jpg" alt="Catering presentation" loading="lazy"/></div>
+      <div class="cat-photo-tile">
+        <img src="images/ct-1.jpeg" alt="Mamma Roti catering — Gulab Jamun tray" loading="lazy"/>
+      </div>
+      <div class="cat-photo-tile">
+        <img src="images/ct-2.jpeg" alt="Mamma Roti catering — Tandoori chicken & butter chicken setup" loading="lazy"/>
+      </div>
+      <div class="cat-photo-tile cat-video-tile">
+        <video src="images/ct-3.mp4" preload="metadata" playsinline muted poster="images/ct-2.jpeg"></video>
+        <button class="cat-video-play" aria-label="Play video"></button>
+      </div>
+      <div class="cat-photo-tile">
+        <img src="images/ct-4.jpeg" alt="Mamma Roti catering — Vegetable Hakka Noodles" loading="lazy"/>
+      </div>
+      <div class="cat-photo-tile cat-video-tile">
+        <video src="images/ct-5.mp4" preload="metadata" playsinline muted poster="images/ct-4.jpeg"></video>
+        <button class="cat-video-play" aria-label="Play video"></button>
+      </div>
+      <div class="cat-photo-tile">
+        <img src="images/ct-6.jpeg" alt="Mamma Roti catering — Birthday party setup, Yuvein's 6th" loading="lazy"/>
+      </div>
+      <div class="cat-photo-tile">
+        <img src="images/ct-7.jpeg" alt="Mamma Roti catering — Today's catering menu board" loading="lazy"/>
+      </div>
+      <div class="cat-photo-tile">
+        <img src="images/ct-8.jpeg" alt="Mamma Roti catering — Themed party gift bags" loading="lazy"/>
+      </div>
     </div>
-  </div>
 </section>
 
 <div class="scalloped-edge"></div>
@@ -177,6 +194,37 @@
 <script>
 window.addEventListener('scroll',()=>document.getElementById('nb').classList.toggle('scrolled',scrollY>20));
 document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobnav').classList.toggle('open'));
+// Video tile click-to-play
+document.querySelectorAll('.cat-video-tile').forEach(tile => {
+  const video = tile.querySelector('video');
+  const btn = tile.querySelector('.cat-video-play');
+  if (!video || !btn) return;
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    // Pause all other videos first
+    document.querySelectorAll('.cat-video-tile video').forEach(v => {
+      if (v !== video) { v.pause(); v.parentElement.classList.remove('playing'); }
+    });
+    if (video.paused) {
+      video.play();
+      tile.classList.add('playing');
+      video.controls = true;
+    }
+  });
+
+  video.addEventListener('pause', () => {
+    if (video.currentTime === 0 || video.ended) {
+      tile.classList.remove('playing');
+      video.controls = false;
+    }
+  });
+  video.addEventListener('ended', () => {
+    tile.classList.remove('playing');
+    video.controls = false;
+    video.currentTime = 0;
+  });
+});
 </script>
 </body>
 </html>
