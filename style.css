@@ -3696,3 +3696,235 @@ footer .ft-mood-coffee svg {
     text-align: center;
   }
 }
+
+/* ════════════════════════════════════════
+   MOBILE STICKY CTA BAR — iMessage style
+   Round side icons + center pill
+   ════════════════════════════════════════ */
+   .m-cta-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 850;
+    background:var(--cream);
+    border-top: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 -4px 24px rgba(0,0,0,.1);
+    padding: .75rem 1rem calc(.75rem + env(safe-area-inset-bottom, 0));
+    align-items: center;
+    gap: .75rem;
+  }
+  
+  /* All buttons reset */
+  .m-cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--font-sans);
+    transition: transform .15s, box-shadow .2s, background .2s;
+    cursor: pointer;
+  }
+  
+  /* Side icons — round outline buttons (Call & Menu) */
+  .m-cta-call,
+  .m-cta-menu {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--cream);
+    border: 1.5px solid rgba(74,94,42,.18);
+    color: var(--olive-dk);
+    flex-direction: column;
+    gap: 2px;
+  }
+  .m-cta-call svg,
+  .m-cta-menu svg {
+    width: 22px;
+    height: 22px;
+    color: var(--olive-dk);
+  }
+  .m-cta-call:active,
+  .m-cta-menu:active {
+    background: var(--cream-dark);
+    transform: scale(0.95);
+  }
+  /* Hide the text labels on side icons (icons speak for themselves) */
+  .m-cta-call span,
+  .m-cta-menu span {
+    display: none;
+  }
+  
+  /* Center primary — big WhatsApp pill */
+  .m-cta-primary {
+    flex: 1;
+    height: 52px;
+    border-radius: 30px;
+    background: #25D366;
+    color: #fff;
+    font-weight: 700;
+    font-size: .95rem;
+    letter-spacing: .01em;
+    gap: 8px;
+    box-shadow: 0 6px 18px rgba(37,211,102,.4);
+  }
+  .m-cta-primary svg {
+    width: 22px;
+    height: 22px;
+    color: #fff;
+  }
+  .m-cta-primary:active {
+    background: #1ebe5b;
+    transform: scale(0.97);
+    box-shadow: 0 4px 12px rgba(37,211,102,.5);
+  }
+  
+  /* Mobile only */
+  @media (max-width: 768px) {
+    .m-cta-bar {
+      display: flex;
+    }
+    .wa-float {
+      display: none;
+    }
+    body {
+      padding-bottom: 88px;
+    }
+    .order-strip {
+      bottom: 88px;
+    }
+  }
+
+  /* ════════════════════════════════════════
+   CTA BANDS — Mid-page conversion blocks
+   3 color variants: olive, red, cream
+   ════════════════════════════════════════ */
+.cta-band {
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-band-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.cta-band h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: .75rem;
+}
+.cta-band h3 em {
+  font-style: italic;
+}
+.cta-band p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-band-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cta-band-actions .btn {
+  font-size: 1rem;
+  padding: .9rem 1.75rem;
+}
+.cta-btn-wa svg {
+  flex-shrink: 0;
+}
+
+/* Olive variant — after testimonials */
+.cta-band-olive {
+  background: var(--olive-dk);
+  color: #fff;
+}
+.cta-band-olive h3 { color: #fff; }
+.cta-band-olive h3 em { color: var(--gold); }
+.cta-band-olive p { color: rgba(255,255,255,.78); }
+.cta-band-olive::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 240px;
+  height: 240px;
+  background: rgba(200,150,60,.06);
+  border-radius: 50%;
+  z-index: 1;
+}
+.cta-band-olive::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,.03);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Red variant — after featured dishes */
+.cta-band-red {
+  background: var(--red);
+  color: #fff;
+}
+.cta-band-red h3 { color: #fff; }
+.cta-band-red h3 em { color: var(--gold); }
+.cta-band-red p { color: rgba(255,255,255,.85); }
+.cta-band-red::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 280px;
+  height: 280px;
+  background: rgba(0,0,0,.06);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Cream variant — after why choose */
+.cta-band-cream {
+  background: var(--cream-2);
+  color: var(--olive-dk);
+}
+.cta-band-cream h3 { color: var(--olive-dk); }
+.cta-band-cream h3 em { color: var(--red); }
+.cta-band-cream p { color: var(--text-mid); }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cta-band {
+    padding: 3rem 1.25rem;
+  }
+  .cta-band h3 {
+    font-size: 1.5rem;
+  }
+  .cta-band p {
+    font-size: .95rem;
+    margin-bottom: 1.25rem;
+  }
+  .cta-band-actions {
+    flex-direction: column;
+    gap: .65rem;
+  }
+  .cta-band-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: .85rem 1.5rem;
+    font-size: .95rem;
+  }
+}
