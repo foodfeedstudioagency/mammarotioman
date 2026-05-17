@@ -2,43 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- Homepage — highest priority -->
   <url>
     <loc>https://mammarotioman.com/</loc>
-    <lastmod>2025-12-01</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://mammarotioman.com/og-image.jpg</image:loc>
       <image:title>Mamma Roti — Indian Cloud Kitchen Muscat</image:title>
+      <image:caption>Authentic Indian food delivery in Muscat, Oman</image:caption>
     </image:image>
   </url>
 
+  <!-- Menu — second highest, weekly updates as menu changes -->
   <url>
     <loc>https://mammarotioman.com/menu.html</loc>
-    <lastmod>2025-12-01</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mammarotioman.com/og-image.jpg</image:loc>
+      <image:title>Mamma Roti Menu — Chaat, Biryani, Curries</image:title>
+    </image:image>
   </url>
 
+  <!-- Catering — high priority service page (was missing!) -->
   <url>
-    <loc>https://mammarotioman.com/about.html</loc>
-    <lastmod>2025-12-01</lastmod>
+    <loc>https://mammarotioman.com/catering.html</loc>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mammarotioman.com/og-image.jpg</image:loc>
+      <image:title>Catering Services Muscat — Mamma Roti</image:title>
+    </image:image>
   </url>
 
+  <!-- Gallery — visual content, updates often -->
   <url>
     <loc>https://mammarotioman.com/gallery.html</loc>
-    <lastmod>2025-12-01</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mammarotioman.com/og-image.jpg</image:loc>
+      <image:title>Mamma Roti Food Gallery — Muscat</image:title>
+    </image:image>
+  </url>
+
+  <!-- About — brand story, low change frequency -->
+  <url>
+    <loc>https://mammarotioman.com/about.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
+  <!-- Contact — important for local SEO, but content rarely changes -->
   <url>
     <loc>https://mammarotioman.com/contact.html</loc>
-    <lastmod>2025-12-01</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

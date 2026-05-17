@@ -1,18 +1,29 @@
 # robots.txt for Mamma Roti — https://mammarotioman.com
-# Last updated: 2025
+# Last updated: May 2026
 
+# Default — allow all bots
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.pdf$
 
-# Specific bots
+# Don't index transactional pages or dev files
+Disallow: /thank-you.html
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /robots.txt
+
+# Search engine bots — allowed
 User-agent: Googlebot
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Disallow: /thank-you.html
 
 User-agent: Slurp
 Allow: /
@@ -20,7 +31,7 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# AI scrapers — allowed (we want to be discoverable)
+# AI scrapers — allowed for discoverability
 User-agent: GPTBot
 Allow: /
 
@@ -30,8 +41,24 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Block bad / scraper bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
 # Sitemap location
 Sitemap: https://mammarotioman.com/sitemap.xml
-
-# Crawl delay for general bots (seconds)
-Crawl-delay: 1
