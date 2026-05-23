@@ -2432,6 +2432,7 @@ footer {
     box-shadow: 0 4px 16px rgba(0,0,0,.08);
     background: var(--cream-dark);
     transition: transform .3s, box-shadow .3s;
+    aspect-ratio: 3/4;
   }
   .cat-photo-tile:hover {
     transform: translateY(-4px);
@@ -2441,6 +2442,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom right;   /* shows bottom-right area */
     display: block;
     transition: transform .5s;
   }
