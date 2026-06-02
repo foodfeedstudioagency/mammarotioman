@@ -3729,30 +3729,30 @@ footer .ft-mood-coffee svg {
     cursor: pointer;
   }
   
-  /* Side icons — round outline buttons (Call & Menu) */
-  .m-cta-call,
-  .m-cta-menu {
-    flex: 0 0 auto;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: var(--cream);
-    border: 1.5px solid rgba(74,94,42,.18);
-    color: var(--olive-dk);
-    flex-direction: column;
-    gap: 2px;
-  }
-  .m-cta-call svg,
-  .m-cta-menu svg {
-    width: 22px;
-    height: 22px;
-    color: var(--olive-dk);
-  }
-  .m-cta-call:active,
-  .m-cta-menu:active {
-    background: var(--cream-dark);
-    transform: scale(0.95);
-  }
+  /* Side icons — round outline buttons in brand red */
+.m-cta-call,
+.m-cta-menu {
+  flex: 0 0 auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1.5px solid var(--red);
+  color: var(--red);
+  flex-direction: column;
+  gap: 2px;
+}
+.m-cta-call svg,
+.m-cta-menu svg {
+  width: 22px;
+  height: 22px;
+  color: var(--red);
+}
+.m-cta-call:active,
+.m-cta-menu:active {
+  background: rgba(139,26,26,.08);
+  transform: scale(0.95);
+}
   /* Hide the text labels on side icons (icons speak for themselves) */
   .m-cta-call span,
   .m-cta-menu span {
