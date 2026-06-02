@@ -52,7 +52,7 @@ a { color: inherit; }
    ══════════════ */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0;
-  z-index: 900; height: 88px;
+  z-index: 900; height: 100px;
   background: rgba(245, 240, 232, 0.97);
   backdrop-filter: blur(16px);
   transition: box-shadow .3s, background .3s;
@@ -65,11 +65,11 @@ a { color: inherit; }
 }
 .nav-logo { text-decoration: none; display: flex; align-items: center; }
 .nav-logo img {
-  height: 56px;
+  height: 72px;
   width: auto;
-  max-width: 180px;
+  max-width: 240px;
   object-fit: contain;
-  mix-blend-mode: multiply;
+  /* removed mix-blend-mode — new logo is on dark bg, needs no blending */
 }
 .nav-links { display: flex; align-items: center; gap: .25rem; list-style: none; justify-content: center; }
 .nav-links a {
@@ -114,7 +114,7 @@ a { color: inherit; }
 }
 .nav-mobile a:last-child { border-bottom: none; color: var(--olive); font-weight: 600; }
 
-.page-top { padding-top: 100px; }
+.page-top { padding-top: 112px; }
 
 /* ══════════════
    DELIVERY STRIP
@@ -1205,7 +1205,7 @@ footer {
   max-width: 100%;
   margin-bottom: 1rem;
   margin-left: -8px;
-  filter: brightness(0) invert(1);
+  /* no filter — using pre-processed footer logo */
 }
 .ft-brand p {
   font-size: 1rem;
@@ -1972,15 +1972,15 @@ footer {
    ═════════════════════════════════════════ */
 @media (max-width: 768px) {
   /* NAV */
-  .navbar { height: 60px; }
+  .navbar { height: 72px; }
   .page-top { padding-top: 80px; }
-  .nav-mobile { top: 60px; }
+  .nav-mobile { top: 72px; }
   .filter-bar { top: 70px; }
   .nav-links { display: none; }
   .nav-burger { display: flex; }
   .nav-cta { display: none; }
   .nav-inner { grid-template-columns: 1fr auto; padding: 0 1rem; gap: 0; }
-  .nav-logo img { height: 52px; max-width: 160px; }
+  .nav-logo img { height: 60px; max-width: 200px; }
 
   /* HERO — tightened, image first, pill overlapping */
   .hero,
