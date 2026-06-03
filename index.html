@@ -75,7 +75,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800&family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Caveat:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="preload" as="image" href="images/butter-chicken-hero.webp" fetchpriority="high"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;600&family=Cormorant+Garamond:ital,wght@1,600&family=Caveat:wght@700&display=swap" rel="stylesheet"/>
 
 <link rel="stylesheet" href="style.css"/>
 </head>
@@ -128,9 +129,9 @@
     <div class="hero-right">
       <div class="hero-food-wrap">
         <div class="hero-carousel" id="heroCarousel">
-          <img src="images/butter-chicken-hero.png" alt="Butter Chicken — Mamma Roti" class="hero-slide active" loading="eager"/>
-          <img src="images/biryani-hero.png" alt="Chicken Biryani — Mamma Roti" class="hero-slide" loading="eager"/>
-          <img src="images/chaat-hero.png" alt="Papdi Chaat — Mamma Roti" class="hero-slide" loading="eager"/>
+          <img src="images/butter-chicken-hero.webp" alt="Butter Chicken — Mamma Roti Muscat" class="hero-slide active" loading="eager" fetchpriority="high" width="800" height="800"/>
+          <img src="images/biryani-hero.webp" alt="Chicken Biryani — Mamma Roti Muscat" class="hero-slide" loading="lazy" width="800" height="800"/>
+          <img src="images/chaat-hero.webp" alt="Papdi Chaat — Mamma Roti Muscat" class="hero-slide" loading="lazy" width="800" height="800"/>
         </div>
         <div class="hero-dots" id="heroDots">
           <button class="hero-dot active" data-slide="0" aria-label="Show slide 1"></button>
@@ -262,7 +263,7 @@
       <div class="mcard-body">
         <div class="mcard-name">Manchurian</div>
         <div class="mcard-desc">Golden-fried veggie balls in a spicy, tangy Indo-Chinese gravy.</div>
-        <div class="mcard-price">1.000/ 1.8000 OMR</div>
+        <div class="mcard-price">1.000/ 1.800 OMR</div>
       </div>
     </div>
 
@@ -278,9 +279,9 @@
 
   <div class="mcard" data-cat="sweets">
     <div class="mcard-img-wrap">
-      <img src="/images/index-menu.jpeg" alt="Gulab Jamun" class="mcard-img" loading="lazy"/>      </div>
+      <img src="/images/index-menu.jpeg" alt="Chocolate Mousse" class="mcard-img" loading="lazy"/>      </div>
     <div class="mcard-body">
-      <div class="mcard-name">Chocolate mousse</div>
+      <div class="mcard-name">Chocolate Mousse</div>
       <div class="mcard-desc">Smooth dark chocolate mousse — light as air, deep in flavour.</div>
       <div class="mcard-price">1.200 OMR</div>
     </div>
@@ -459,42 +460,43 @@
 
     <div class="ig-grid">
       <a href="https://www.instagram.com/p/DXfCZLICtua/" class="ig-tile" target="_blank" rel="noopener" aria-label="View on Instagram">
-        <img src="ig1.jpg" alt="Fresh Indian food from Mamma Roti kitchen — Muscat Instagram post" loading="lazy"/>        <div class="ig-overlay">
+        <img src="ig1.jpg" alt="Fresh Indian food from Mamma Roti kitchen — Muscat Instagram post" loading="lazy" width="400" height="400"/> 
+         <div class="ig-overlay">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
           <span>Fresh from the Kitchen</span>
         </div>
       </a>
 
       <a href="https://www.instagram.com/p/DYroF8Uqsjk/" class="ig-tile" target="_blank" rel="noopener" aria-label="View on Instagram">
-        <img src="ig2.jpg" alt="Mamma Roti Catering Services for Eid — Delicious food for your special celebration- Book Now" loading="lazy"/>        <div class="ig-overlay">
+        <img src="ig2.jpg" alt="Mamma Roti Catering Services for Eid — Delicious food for your special celebration- Book Now" loading="lazy" width="400" height="400"/>       <div class="ig-overlay">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
           <span>Eid Catering Services</span>
         </div>
       </a>
 
       <a href="https://www.instagram.com/p/DX8iiDoK7GC/" class="ig-tile" target="_blank" rel="noopener" aria-label="View on Instagram">
-        <img src="ig3.jpg" alt="Inside the Mamma Roti cloud kitchen Muscat — Instagram post" loading="lazy"/>        <div class="ig-overlay">
+        <img src="ig3.jpg" alt="Inside the Mamma Roti cloud kitchen Muscat — Instagram post" loading="lazy" width="400" height="400"/>       <div class="ig-overlay">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
           <span>Mamma Roti Kitchen</span>
         </div>
       </a>
 
       <a href="https://www.instagram.com/p/DXaBbU3im4e/" class="ig-tile" target="_blank" rel="noopener" aria-label="View on Instagram">
-        <img src="ig4.jpg" alt="Hot fresh Indian food at Mamma Roti Muscat — Instagram" loading="lazy"/>        <div class="ig-overlay">
+        <img src="ig4.jpg" alt="Hot fresh Indian food at Mamma Roti Muscat — Instagram" loading="lazy" width="400" height="400"/>        <div class="ig-overlay">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
           <span>Hot &amp; Fresh</span>
         </div>
       </a>
 
       <a href="https://www.instagram.com/p/DXYtmw5Cjzz/" class="ig-tile" target="_blank" rel="noopener" aria-label="View on Instagram">
-        <img src="ig5.jpg" alt="Today's special at Mamma Roti, Ghubrah Muscat — Instagram" loading="lazy"/>        <div class="ig-overlay">
+        <img src="ig5.jpg" alt="Today's special at Mamma Roti, Ghubrah Muscat — Instagram" loading="lazy" width="400" height="400"/>        <div class="ig-overlay">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
           <span>Today's Special</span>
         </div>
       </a>
 
       <a href="https://www.instagram.com/p/DXoFsXliq-r/" class="ig-tile" target="_blank" rel="noopener" aria-label="View on Instagram">
-        <img src="ig6.jpg" alt="From the Mamma Roti kitchen — Indian food Muscat Instagram" loading="lazy"/>        <div class="ig-overlay">
+        <img src="ig6.jpg" alt="From the Mamma Roti kitchen — Indian food Muscat Instagram" loading="lazy" width="400" height="400"/>        <div class="ig-overlay">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
           <span>From Our Kitchen</span>
         </div>
@@ -789,8 +791,8 @@ document.querySelectorAll('.ftab').forEach(b=>b.addEventListener('click',()=>{
   const cat=b.dataset.cat;
   document.querySelectorAll('#mgrid .mcard').forEach(c=>c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none');
 }));
-// Hero carousel
-(function(){
+// Hero carousel - deferred
+function initCarousel(){
   const slides = document.querySelectorAll('.hero-slide');
   const dots = document.querySelectorAll('.hero-dot');
   if(!slides.length) return;
@@ -804,24 +806,21 @@ document.querySelectorAll('.ftab').forEach(b=>b.addEventListener('click',()=>{
     slides[current].classList.add('active');
     dots[current].classList.add('active');
   }
-  function next(){
-    goTo((current + 1) % slides.length);
-  }
-  function startTimer(){
-    timer = setInterval(next, 4000);
-  }
-  function resetTimer(){
-    clearInterval(timer);
-    startTimer();
-  }
+  function next(){ goTo((current + 1) % slides.length); }
+  function startTimer(){ timer = setInterval(next, 4000); }
+  function resetTimer(){ clearInterval(timer); startTimer(); }
   dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-      goTo(i);
-      resetTimer();
-    });
+    dot.addEventListener('click', () => { goTo(i); resetTimer(); });
   });
   startTimer();
-})();
+}
+
+// Run carousel after page is interactive
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(initCarousel);
+} else {
+  setTimeout(initCarousel, 1);
+}
 </script>
 
 <!-- Mobile sticky CTA bar -->
