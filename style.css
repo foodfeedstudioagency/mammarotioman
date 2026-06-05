@@ -471,7 +471,8 @@ a { color: inherit; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 1rem;
   overflow: hidden;
 }
@@ -3979,3 +3980,92 @@ footer .ft-mood-coffee svg {
   }
 }
 
+/* ===== Now on Talabat (announcement) ===== */
+.mr-talabat{
+  background: var(--cream);
+  padding: clamp(2.5rem,6vw,4rem) 2rem;
+}
+.mr-talabat__card{
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 4px solid #F15A29;
+  border-radius: 18px;
+  padding: clamp(2rem,5vw,3rem) clamp(1.5rem,5vw,2.75rem);
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0,0,0,.07);
+}
+.mr-talabat__card .eyebrow{ justify-content: center; }
+.mr-talabat__title{
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem,3.5vw,2.6rem);
+  font-weight: 700;
+  color: var(--olive-dk);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+.mr-talabat__brand{
+  display: inline-block;
+  background: #F15A29;
+  color: #fff;
+  padding: .04em .38em;
+  border-radius: .3em;
+  font-family: var(--font-sans);
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+.mr-talabat__sub{
+  font-size: 1rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  max-width: 460px;
+  margin: 0 auto 1.75rem;
+}
+.mr-talabat__chips{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .6rem;
+  padding: 0;
+  margin: 0;
+}
+.mr-talabat__chips li{
+  background: var(--cream);
+  border: 1px solid var(--border);
+  color: var(--olive);
+  font-weight: 600;
+  font-size: .9rem;
+  padding: .5rem 1.1rem;
+  border-radius: 999px;
+}
+
+@media (max-width: 768px){
+  .mr-talabat{ padding: 2.5rem 1.25rem; }
+}
+
+/* Footer — Now on Talabat line */
+.ft-talabat{
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: .82rem;
+  color: rgba(255,255,255,.75);
+}
+.ft-talabat span{
+  color: #F15A29;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+
+.bbq-kicker{
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.6);
+  margin-bottom: .5rem;
+}
